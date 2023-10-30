@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        .job-selection {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .job-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .job-form {
+            display: none;
+        }
+
+        .job-form.active {
+            display: block;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+
+        .job-questions {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .job-questions label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .job-questions textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Application</h1>
+        <div class="job-selection">
+            <button class="job-button" id="marketing-button">Marketing</button>
+            <button class="job-button" id="graphics-button">Graphics</button>
+            <button class="job-button" id="coding-button">Coding</button>
+        </div>
+
+        <div class="job-form" id="marketing-form">
+            <h2>Marketing Job Application</h2>
+            <input type="text" class="form-input" placeholder="Your Name">
+            <input type="email" class="form-input" placeholder="Your Email">
+            <div class="job-questions">
+                <label for="marketing-experience">Do you have prior marketing experience?</label>
+                <textarea id="marketing-experience"></textarea>
+                <label for="marketing-skills">What marketing skills do you possess?</label>
+                <textarea id="marketing-skills"></textarea>
+            </div>
+            <button class="form-button">Submit Application</button>
+        </div>
+
+        <div class="job-form" id="graphics-form">
+            <h2>Graphics Job Application</h2>
+            <input type="text" class="form-input" placeholder="Your Name">
+            <input type="email" class="form-input" placeholder="Your Email">
+            <div class="job-questions">
+                <label for="graphics-experience">Do you have prior graphics design experience?</label>
+                <textarea id="graphics-experience"></textarea>
+                <label for="graphics-portfolio">Please provide a link to your portfolio (if available)</label>
+                <textarea id="graphics-portfolio"></textarea>
+            </div>
+            <button class="form-button">Submit Application</button>
+        </div>
+
+        <div class="job-form" id="coding-form">
+            <h2>Coding Job Application</h2>
+            <input type="text" class="form-input" placeholder="Your Name">
+            <input type="email" class="form-input" placeholder="Your Email">
+            <div class="job-questions">
+                <label for="coding-experience">Do you have prior coding experience?</label>
+                <textarea id="coding-experience"></textarea>
+                <label for="coding-projects">Please describe your recent coding projects</label>
+                <textarea id="coding-projects"></textarea>
+            </div>
+            <button class="form-button">Submit Application</button>
+        </div>
+    </div>
+
+    <script>
+        const marketingButton = document.getElementById("marketing-button");
+        const graphicsButton = document.getElementById("graphics-button");
+        const codingButton = document.getElementById("coding-button");
+
+        const marketingForm = document.getElementById("marketing-form");
+        const graphicsForm = document.getElementById("graphics-form");
+        const codingForm = document.getElementById("coding-form");
+
+        marketingButton.addEventListener("click", () => {
+            marketingForm.classList.add("active");
+            graphicsForm.classList.remove("active");
+            codingForm.classList.remove("active");
+        });
+
+        graphicsButton.addEventListener("click", () => {
+            marketingForm.classList.remove("active");
+            graphicsForm.classList.add("active");
+            codingForm.classList.remove("active");
+        });
+
+        codingButton.addEventListener("click", () => {
+            marketingForm.classList.remove("active");
+            graphicsForm.classList.remove("active");
+            codingForm.classList.add("active");
+        });
+    </script>
+</body>
+</html>
