@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Reminder App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #reminder-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .reminder-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Reminder App</h1>
+        <form id="reminder-form">
+            <label for="hour">Select Hour:</label>
+            <select id="hour">
+                <!-- Add 12 hours here with AM/PM -->
+            </select>
+
+            <label for="minute">Select Minute:</label>
+            <select id="minute">
+                <!-- Add 60 minutes here -->
+            </select>
+
+            <label for="ampm">Select AM/PM:</label>
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+
+            <label for="reminder">Set Reminder:</label>
+            <input type="text" id="reminder" placeholder="Enter your reminder">
+
+            <button type="button" onclick="setReminder()">Set Reminder</button>
+        </form>
+
+        <div id="reminder-list">
+            <h2>Reminders:</h2>
+            <ul id="reminders">
+                <!-- Reminder items will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Populate hour and minute select options
+        const hourSelect = document.getElementById("hour");
+        const minuteSelect = document.getElementById("minute");
+
+        for (let h = 1; h <= 12; h++) {
+            hourSelect.innerHTML += `<option value="${h}">${h < 10 ? "0" + h : h}</option>`;
+        }
+
+        for (let m = 0; m < 60; m++) {
+            minuteSelect.innerHTML += `<option value="${m}">${m < 10 ? "0" + m : m}</option>`;
+        }
+
+        function setReminder() {
+            const hourSelect = document.getElementById("hour");
+            const minuteSelect = document.getElementById("minute");
+            const ampmSelect = document.getElementById("ampm");
+            const reminderInput = document.getElementById("reminder");
+            const remindersList = document.getElementById("reminders");
+
+            const selectedHour = hourSelect.options[hourSelect.selectedIndex].text;
+            const selectedMinute = minuteSelect.options[minuteSelect.selectedIndex].text;
+            const selectedAMPM = ampmSelect.options[ampmSelect.selectedIndex].text;
+            const reminderText = reminderInput.value;
+
+            if (reminderText.trim() !== "") {
+                const reminderItem = document.createElement("li");
+                reminderItem.textContent = `${selectedHour}:${selectedMinute} ${selectedAMPM}: ${reminderText}`;
+                remindersList.appendChild(reminderItem);
+                reminderInput.value = "";
+
+                // You can save the reminder in localStorage or use other storage methods here
+            }
+        }
+    </script>
+</body>
+</html>
+  
