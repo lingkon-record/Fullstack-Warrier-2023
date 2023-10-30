@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <div id="ageDisplay"></div>
+  <script>
+    let birthYear = prompt("Enter your birth year:");
+    let currentYear = new Date().getFullYear();
+    let age = currentYear - birthYear;
+    document.getElementById("ageDisplay").textContent = "Your age is " + age + " years.";
+  </script>
+</body>
+</html>
