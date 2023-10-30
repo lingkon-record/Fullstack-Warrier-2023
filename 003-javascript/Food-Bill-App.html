@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #app {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f7f7f7;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        p {
+            font-weight: bold;
+            color: #4caf50;
+        }
+
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Food Bill Management App</h1>
+        <input type="text" id="item" placeholder="Item">
+        <input type="number" id="price" placeholder="Price">
+        <button onclick="addItem()">Add Item</button>
+        <ul id="bill-list"></ul>
+        <p>Total: $<span id="total">0.00</span></p>
+    </div>
+
+    <script>
+        let total = 0;
+
+        function addItem() {
+            const item = document.getElementById("item").value;
+            const price = parseFloat(document.getElementById("price").value);
+
+            if (item && !isNaN(price)) {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item}: $${price.toFixed(2)}`;
+                document.getElementById("bill-list").appendChild(listItem);
+
+                total += price;
+                document.getElementById("total").textContent = total.toFixed(2);
+
+                document.getElementById("item").value = "";
+                document.getElementById("price").value = "";
+            }
+        }
+    </script>
+</body>
+</html>
