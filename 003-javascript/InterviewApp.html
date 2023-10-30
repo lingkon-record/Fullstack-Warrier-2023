@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Programmer Interview App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #007bff;
+        }
+
+        #questions {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Programmer Interview App</h1>
+        <div id="questions">
+            <!-- Display interview questions here using JavaScript -->
+        </div>
+        <button id="nextButton">Next Question</button>
+    </div>
+
+    <script>
+        const questions = [
+            "What is a closure in JavaScript?",
+            "Explain the difference between 'null' and 'undefined'.",
+            "What is the event loop in JavaScript and how does it work?",
+            "What is 'hoisting' in JavaScript?",
+            "Explain the concept of 'this' in JavaScript.",
+            "What is the difference between '==' and '===' in JavaScript?",
+            "What is the purpose of 'use strict' in JavaScript?",
+            "How do you handle errors in JavaScript?",
+            "What are promises in JavaScript and why are they used?",
+            "Explain the concept of callback functions in JavaScript.",
+            "What is the 'prototype' object in JavaScript?",
+            "What is the difference between 'let', 'const', and 'var' in variable declaration?",
+            "How can you clone an object in JavaScript?",
+            "What is an IIFE (Immediately Invoked Function Expression)?",
+            "What is a closure in JavaScript?",
+            "What are the key differences between ES6 classes and constructor functions?",
+            // Add more interview questions here
+        ];
+
+        let currentQuestionIndex = 0;
+        const questionsElement = document.getElementById("questions");
+        const nextButton = document.getElementById("nextButton");
+
+        function displayQuestion() {
+            questionsElement.textContent = questions[currentQuestionIndex];
+        }
+
+        displayQuestion();
+
+        nextButton.addEventListener("click", function () {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                displayQuestion();
+            } else {
+                questionsElement.textContent = "Interview Completed!";
+                nextButton.disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
