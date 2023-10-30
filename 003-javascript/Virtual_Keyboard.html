@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .keyboard {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 5px;
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .key {
+      width: 40px;
+      height: 40px;
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .key:hover {
+      background-color: #ccc;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="keyboard">
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key">0</div>
+  </div>
+  <input type="text" id="output" readonly>
+
+  <script>
+    const keys = document.querySelectorAll('.key');
+    const output = document.getElementById('output');
+
+    keys.forEach(key => {
+      key.addEventListener('click', () => {
+        const value = key.innerText;
+        output.value += value;
+      });
+    });
+  </script>
+</body>
+</html>
