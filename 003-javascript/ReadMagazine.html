@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .book {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .section {
+      margin: 20px 0;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .chapter {
+      margin: 10px 0;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+      border-left: 4px solid #0073e6;
+      padding-left: 10px;
+    }
+
+    .article {
+      display: none;
+      margin: 10px 0;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <div class="section">
+      <div class="section-title">Section 1: Introduction</div>
+      <div class="chapter" id="chapter1">Chapter 1: Getting Started</div>
+      <div class="article" id="article1">
+        This is the introduction chapter, providing an overview of the book. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur metus sit amet eleifend. Vivamus volutpat massa nec nisl tristique, at vestibulum ante lacinia.
+      </div>
+      <div class="chapter" id="chapter2">Chapter 2: History</div>
+      <div class="article" id="article2">
+        Learn about the history of the subject discussed in this book. Vivamus volutpat massa nec nisl tristique, at vestibulum ante lacinia. Sed eget libero eget neque dignissim congue ac et velit. Suspendisse potenti. Praesent suscipit magna eget justo consectetur, sed suscipit sapien hendrerit.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Section 2: Main Content</div>
+      <div class="chapter" id="chapter3">Chapter 3: Key Concepts</div>
+      <div class="article" id="article3">
+        Delve into the key concepts and ideas explored in this section. Sed eget libero eget neque dignissim congue ac et velit. Suspendisse potenti. Praesent suscipit magna eget justo consectetur, sed suscipit sapien hendrerit. Proin sit amet aliquet felis.
+      </div>
+      <div class="chapter" id="chapter4">Chapter 4: In-Depth Analysis</div>
+      <div class="article" id="article4">
+        Gain a deeper understanding of the main content of the book. Proin sit amet aliquet felis. Nullam consectetur metus sit amet eleifend. Vivamus volutpat massa nec nisl tristique, at vestibulum ante lacinia.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const chapters = document.querySelectorAll('.chapter');
+    const articles = document.querySelectorAll('.article');
+
+    chapters.forEach((chapter, index) => {
+      chapter.addEventListener('click', () => {
+        articles.forEach((article, articleIndex) => {
+          if (articleIndex === index) {
+            article.style.display = 'block';
+          } else {
+            article.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
