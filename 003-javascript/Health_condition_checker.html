@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Condition Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Health Condition Checker</h1>
+        <label for="symptoms">Select your symptoms:</label>
+        <select id="symptoms" multiple>
+            <option value="fever">Fever</option>
+            <option value="cough">Cough</option>
+            <option value="shortnessOfBreath">Shortness of Breath</option>
+            <option value="fatigue">Fatigue</option>
+        </select>
+        <button id="checkButton">Check My Health</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        document.getElementById("checkButton").addEventListener("click", function() {
+            const selectedSymptoms = Array.from(document.getElementById("symptoms").selectedOptions).map(option => option.value);
+            const isHighRisk = selectedSymptoms.includes("fever") || selectedSymptoms.includes("shortnessOfBreath");
+            const resultElement = document.getElementById("result");
+
+            if (isHighRisk) {
+                resultElement.textContent = "You may be at higher risk. Please consult a healthcare professional.";
+            } else {
+                resultElement.textContent = "You appear to be at lower risk. Stay safe and monitor your health.";
+            }
+        });
+    </script>
+</body>
+</html>
