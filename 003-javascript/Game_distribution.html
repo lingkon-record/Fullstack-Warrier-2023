@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Distribution Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+    #header {
+      text-align: center;
+      padding: 20px;
+      background-color: #007BFF;
+      color: #fff;
+    }
+    #game-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .animal {
+      text-align: center;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .animal h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .animal img {
+      width: 100px;
+      height: auto;
+    }
+    .animal p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    #fruits-container {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 20px auto;
+      max-width: 400px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    #fruits-container h2 {
+      font-size: 20px;
+    }
+    #distribute-fruit {
+      font-size: 18px;
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #distribute-fruit:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Fruit Distribution Game</h1>
+  </div>
+  <div id="game-container">
+    <div class="animal" id="lion">
+      <h2>Lion</h2>
+      <img src="lion.png" alt="Lion">
+      <p>Fruits: <span id="lion-fruits">0</span></p>
+    </div>
+    <div class="animal" id="elephant">
+      <h2>Elephant</h2>
+      <img src="elephant.png" alt="Elephant">
+      <p>Fruits: <span id="elephant-fruits">0</span></p>
+    </div>
+  </div>
+  <div id="fruits-container">
+    <h2>Fruits</h2>
+    <button id="distribute-fruit">Distribute Fruit</button>
+  </div>
+
+  <script>
+    const lionFruits = document.getElementById('lion-fruits');
+    const elephantFruits = document.getElementById('elephant-fruits');
+    const distributeButton = document.getElementById('distribute-fruit');
+
+    const fruits = [
+      "Apple", "Banana", "Orange", "Grapes", "Watermelon",
+      "Strawberry", "Mango", "Pineapple", "Cherry", "Blueberry"
+    ];
+
+    const animals = [
+      "Lion", "Elephant", "Tiger", "Giraffe", "Zebra",
+      "Kangaroo", "Hippo", "Monkey", "Panda", "Leopard"
+    ];
+
+    distributeButton.addEventListener('click', distributeFruit);
+
+    function distributeFruit() {
+      const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+      const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+      const fruitCount = Math.floor(Math.random() * 5) + 1;
+
+      if (randomAnimal === 'Lion') {
+        lionFruits.textContent = parseInt(lionFruits.textContent) + fruitCount;
+      } else {
+        elephantFruits.textContent = parseInt(elephantFruits.textContent) + fruitCount;
+      }
+
+      alert(`${randomFruit} distributed to the ${randomAnimal}!`);
+    }
+  </script>
+</body>
+</html>
