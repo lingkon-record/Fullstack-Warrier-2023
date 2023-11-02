@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complex HTML Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Complex HTML Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Employee Info</th>
+                <th rowspan="2">Contact</th>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Manager</td>
+                <td>johndoe@example.com</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>Developer</td>
+                <td>alice.smith@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>Designer</td>
+                <td>bob.jones@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
