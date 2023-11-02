@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Selector</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #question {
+            font-size: 24px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #00aaff;">Question Selector</h1>
+    <label for="options">Select an option:</label>
+    <select id="options">
+        <option value="option1">Favorite Book</option>
+        <option value="option2">Dream Vacation</option>
+        <option value="option3">Biggest Fear</option>
+    </select>
+    <div id="question">
+        <!-- The selected question will be displayed here -->
+    </div>
+
+    <script>
+        // Define questions for each option
+        const questions = {
+            option1: "What is your favorite book?",
+            option2: "Where is your dream vacation destination?",
+            option3: "What is your biggest fear?"
+        };
+
+        // Function to update the displayed question based on the selected option
+        function updateQuestion() {
+            const selectedOption = document.getElementById("options").value;
+            const question = questions[selectedOption];
+            document.getElementById("question").textContent = question;
+        }
+
+        // Initial question display
+        updateQuestion();
+
+        // Event listener to change the question on option selection
+        document.getElementById("options").addEventListener("change", updateQuestion);
+    </script>
+</body>
+</html>
