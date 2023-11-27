@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Color Shadows</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .box:hover {
+      box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.8),    /* Red shadow on hover */
+        0 0 10px rgba(0, 255, 0, 0.8),    /* Green shadow on hover */
+        0 0 10px rgba(0, 0, 255, 0.8);    /* Blue shadow on hover */
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Multiple Color Shadows</h1>
+
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+</body>
+</html>
