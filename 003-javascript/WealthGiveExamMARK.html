@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #distribution {
+      margin-top: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+  <title>Money Distribution Among Sons</title>
+</head>
+<body>
+
+  <h1>Money Distribution Among Sons</h1>
+
+  <div id="distribution">
+    <form id="marksForm">
+      <label for="son1Mark">Son 1 Exam Mark:</label>
+      <input type="number" id="son1Mark" placeholder="Enter exam mark for Son 1" required>
+
+      <label for="son2Mark">Son 2 Exam Mark:</label>
+      <input type="number" id="son2Mark" placeholder="Enter exam mark for Son 2" required>
+
+      <label for="son3Mark">Son 3 Exam Mark:</label>
+      <input type="number" id="son3Mark" placeholder="Enter exam mark for Son 3" required>
+
+      <label for="son4Mark">Son 4 Exam Mark:</label>
+      <input type="number" id="son4Mark" placeholder="Enter exam mark for Son 4" required>
+
+      <label for="son5Mark">Son 5 Exam Mark:</label>
+      <input type="number" id="son5Mark" placeholder="Enter exam mark for Son 5" required>
+
+      <label for="son6Mark">Son 6 Exam Mark:</label>
+      <input type="number" id="son6Mark" placeholder="Enter exam mark for Son 6" required>
+
+      <button type="button" onclick="calculateDistribution()">Calculate Distribution</button>
+    </form>
+
+    <div id="results"></div>
+  </div>
+
+  <script>
+    // Initial amount
+    const totalMoney = 500;
+
+    // Calculate distribution based on exam marks
+    const calculateDistribution = () => {
+      const son1Mark = parseInt(document.getElementById('son1Mark').value) || 0;
+      const son2Mark = parseInt(document.getElementById('son2Mark').value) || 0;
+      const son3Mark = parseInt(document.getElementById('son3Mark').value) || 0;
+      const son4Mark = parseInt(document.getElementById('son4Mark').value) || 0;
+      const son5Mark = parseInt(document.getElementById('son5Mark').value) || 0;
+      const son6Mark = parseInt(document.getElementById('son6Mark').value) || 0;
+
+      const totalMarks = son1Mark + son2Mark + son3Mark + son4Mark + son5Mark + son6Mark;
+
+      const distribution = [
+        { name: "Son1", share: Math.round((son1Mark / totalMarks) * totalMoney) },
+        { name: "Son2", share: Math.round((son2Mark / totalMarks) * totalMoney) },
+        { name: "Son3", share: Math.round((son3Mark / totalMarks) * totalMoney) },
+        { name: "Son4", share: Math.round((son4Mark / totalMarks) * totalMoney) },
+        { name: "Son5", share: Math.round((son5Mark / totalMarks) * totalMoney) },
+        { name: "Son6", share: Math.round((son6Mark / totalMarks) * totalMoney) }
+      ];
+
+      displayResults(distribution);
+    };
+
+    // Display distribution results on the page
+    const displayResults = (distribution) => {
+      const resultsElement = document.getElementById('results');
+      resultsElement.innerHTML = '<h2>Money Distribution</h2>';
+
+      distribution.forEach((son) => {
+        const sonElement = document.createElement('p');
+        sonElement.textContent = `${son.name}: $${son.share}`;
+        resultsElement.appendChild(sonElement);
+      });
+    };
+  </script>
+
+</body>
+</html>
