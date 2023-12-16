@@ -1,0 +1,28 @@
+1. Always include alt text:
+   Ensure every <img> element has an alt attribute:
+   <img src="image.jpg" alt="Descriptive text here" />
+
+2. Be descriptive:
+   Make alt text meaningful and descriptive, conveying image content:
+   <img src="..." alt="Concise and descriptive text" />
+
+3. Keep it concise:
+   Aim for brief alt text that conveys essential information.
+
+4. Avoid redundant information:
+   Use empty alt attribute for decorative images:
+   <img src="decorative-image.jpg" alt="" />
+
+5. Dynamic alt text:
+   Ensure alt text dynamically updates for interactive or changing images.
+
+6. Use alt text for complex images:
+   Provide detailed alt text for charts, diagrams, or complex images.
+
+7. Test with screen readers:
+   Verify that screen readers correctly interpret and convey alt text.
+
+8. Responsive images:
+   Ensure alt text remains relevant across different screen sizes.
+
+Remember, accessibility is crucial for an inclusive user experience.
