@@ -1,0 +1,63 @@
+React's useState and useEffect are fundamental hooks used for managing state and side effects in functional components.
+
+1. useState Use Cases:
+   - **Basic State Management:**
+     ```jsx
+     const [count, setCount] = useState(0);
+     ```
+   - **Updating State Based on Previous State:**
+     ```jsx
+     setCount(prevCount => prevCount + 1);
+     ```
+   - **Object State:**
+     ```jsx
+     const [user, setUser] = useState({ name: 'John', age: 25 });
+     ```
+   - **Array State:**
+     ```jsx
+     const [list, setList] = useState(['item1', 'item2']);
+     ```
+
+2. useEffect Use Cases:
+   - **Fetching Data with AJAX:**
+     ```jsx
+     useEffect(() => {
+       const fetchData = async () => {
+         const result = await axios.get('api/data');
+         setData(result.data);
+       };
+       fetchData();
+     }, []); // Empty dependency array ensures it runs once after initial render.
+     ```
+   - **ComponentDidMount Equivalent:**
+     ```jsx
+     useEffect(() => {
+       // ComponentDidMount logic here
+       return () => {
+         // ComponentWillUnmount logic here
+       };
+     }, []);
+     ```
+   - **Dependency Tracking:**
+     ```jsx
+     useEffect(() => {
+       // Effect will run whenever 'dependency' changes.
+     }, [dependency]);
+     ```
+   - **Side Effect on State Change:**
+     ```jsx
+     useEffect(() => {
+       // Side effect logic here when 'state' changes.
+     }, [state]);
+     ```
+   - **Cleanup and Unsubscribe:**
+     ```jsx
+     useEffect(() => {
+       const subscription = someObservable.subscribe();
+       return () => {
+         subscription.unsubscribe();
+       };
+     }, []);
+     ```
+
+Remember to adapt these examples based on your specific use cases and application requirements.
