@@ -1,4 +1,4 @@
-Certainly! Here's a list of 30+ unique programming problems that cover various concepts and difficulty levels:
+Basic Problem list, Try to Solve
 
 1. **Reverse a String:** Write a function to reverse a given string.
 
@@ -59,5 +59,3 @@ Certainly! Here's a list of 30+ unique programming problems that cover various c
 29. **Valid Sudoku:** Determine if a 9x9 Sudoku board is valid.
 
 30. **Minimum Window Substring:** Find the minimum window in a string that contains all characters of another string.
-
-These problems cover a wide range of data structures and algorithms. Feel free to explore and tackle them based on your current level and interests
