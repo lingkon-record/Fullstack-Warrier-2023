@@ -1,0 +1,40 @@
+{
+  "countries": [
+    {
+      "name": "Pakistan",
+      "cities": [
+        {
+          "name": "Karachi",
+          "area": "City Center",
+          "food": ["Biryani", "Nihari"],
+          "fruits": ["Mango", "Guava"]
+        },
+        {
+          "name": "Lahore",
+          "area": "Old City",
+          "food": ["Siri Paye", "Chapli Kebab"],
+          "fruits": ["Kinnow", "Pomegranate"]
+        }
+        // Add more cities in Pakistan as needed
+      ]
+    },
+    {
+      "name": "Afghanistan",
+      "cities": [
+        {
+          "name": "Kabul",
+          "area": "Downtown",
+          "food": ["Kabuli Pulao", "Mantu"],
+          "fruits": ["Pomegranate", "Melon"]
+        },
+        {
+          "name": "Herat",
+          "area": "Historical District",
+          "food": ["Kichiri", "Bolani"],
+          "fruits": ["Grapes", "Apricot"]
+        }
+        // Add more cities in Afghanistan as needed
+      ]
+    }
+  ]
+}
