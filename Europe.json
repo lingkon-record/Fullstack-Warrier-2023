@@ -1,0 +1,40 @@
+{
+  "countries": [
+    {
+      "name": "France",
+      "capital": "Paris",
+      "cities": ["Marseille", "Lyon", "Nice"]
+    },
+    {
+      "name": "Germany",
+      "capital": "Berlin",
+      "cities": ["Hamburg", "Munich", "Cologne"]
+    },
+    {
+      "name": "United Kingdom",
+      "capital": "London",
+      "cities": ["Manchester", "Birmingham", "Edinburgh"]
+    },
+    {
+      "name": "Italy",
+      "capital": "Rome",
+      "cities": ["Milan", "Venice", "Florence"]
+    },
+    {
+      "name": "Spain",
+      "capital": "Madrid",
+      "cities": ["Barcelona", "Valencia", "Seville"]
+    },
+    {
+      "name": "Netherlands",
+      "capital": "Amsterdam",
+      "cities": ["Rotterdam", "The Hague", "Utrecht"]
+    },
+    {
+      "name": "Sweden",
+      "capital": "Stockholm",
+      "cities": ["Gothenburg", "Malmö", "Uppsala"]
+    },
+    // Add more countries with capitals and cities as needed
+  ]
+}
