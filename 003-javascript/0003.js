@@ -11,3 +11,5 @@ const elephant = new Animal("Dumbo", "Elephant");
 // Display animal information using the console
 console.log("Animal 1: " + lion.name + " is a " + lion.type);
 console.log("Animal 2: " + elephant.name + " is an " + elephant.type);
+
+// next example will be added
