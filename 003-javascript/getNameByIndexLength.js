@@ -6,8 +6,7 @@ function getNameByIndexLength(index) {
         2: "Alice",
         3: "Bob",
         4: "Emma",
-        5: "David"
-        // Add more names as needed for different index lengths
+        5: "David"  
     };
 
     // Get the length of the index
@@ -21,7 +20,6 @@ function getNameByIndexLength(index) {
     }
 }
 
-// Example usage:
 console.log(getNameByIndexLength(123)); // Output: "Bob" (index length is 3)
 console.log(getNameByIndexLength(12));  // Output: "Alice" (index length is 2)
 console.log(getNameByIndexLength(4567));// Output: "No name found for index length 4"
