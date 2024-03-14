@@ -1,4 +1,4 @@
-// Define animal types
+// Define animal types in here
 class Animal {
   constructor(name, type) {
     this.name = name;
@@ -29,7 +29,7 @@ class Cat extends Animal {
   }
 }
 
-// Create an adoption system
+// Create an adoption system 0 below
 class AdoptionSystem {
   constructor() {
     this.animals = [];
