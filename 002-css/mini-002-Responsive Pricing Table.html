@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Pricing Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .highlight {
+      background-color: #f9f9f9;
+    }
+
+    @media screen and (max-width: 600px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      th {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr {
+        margin-bottom: 15px;
+      }
+
+      td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+      }
+
+      td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+
+      td:nth-of-type(1):before { content: "Plan"; }
+      td:nth-of-type(2):before { content: "Features"; }
+      td:nth-of-type(3):before { content: "Price"; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th>Plan</th>
+          <th>Features</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="highlight">Basic</td>
+          <td class="highlight">10 GB Storage<br>100 GB Bandwidth<br>5 Email Accounts</td>
+          <td class="highlight">$9.99/month</td>
+        </tr>
+        <tr>
+          <td class="highlight">Pro</td>
+          <td class="highlight">50 GB Storage<br>500 GB Bandwidth<br>15 Email Accounts</td>
+          <td class="highlight">$19.99/month</td>
+        </tr>
+        <tr>
+          <td class="highlight">Premium</td>
+          <td class="highlight">100 GB Storage<br>1000 GB Bandwidth<br>Unlimited Email Accounts</td>
+          <td class="highlight">$29.99/month</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
