@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter</title>
+</head>
+<body>
+  <h1>Product Filter</h1>
+  <button onclick="filterBy('sell')">Sell Price</button>
+  <button onclick="filterBy('real')">Real Price</button>
+  <br><br>
+  <div id="productList"></div>
+
+  <script>
+    // Sample product data
+    const products = [
+      { name: "Product 1", realPrice: 50, sellPrice: 60 },
+      { name: "Product 2", realPrice: 30, sellPrice: 35 },
+      { name: "Product 3", realPrice: 20, sellPrice: 25 },
+      { name: "Product 4", realPrice: 40, sellPrice: 45 }
+    ];
+
+    // Function to filter products based on button type
+    function filterBy(type) {
+      const productList = document.getElementById("productList");
+      productList.innerHTML = "";
+
+      products.forEach(product => {
+        const price = type === 'sell' ? product.sellPrice : product.realPrice;
+        const productName = product.name;
+        const listItem = document.createElement("p");
+        listItem.textContent = `${productName}: $${price}`;
+        productList.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>
