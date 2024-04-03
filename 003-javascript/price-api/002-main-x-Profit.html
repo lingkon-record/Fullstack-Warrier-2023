@@ -1,0 +1,61 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Filter</title>
+</head>
+<body>
+  <h1>Product Filter</h1>
+  <button onclick="filterBy('sell')">Sell Price</button>
+  <button onclick="filterBy('real')">Main Price</button>
+  <br><br>
+  <div id="productList"></div>
+  <div id="totalProfit"></div>
+
+  <script>
+    // Sample product data
+    const products = [
+      { name: "Carrot", realPrice: 2.50, sellPrice: 3.00 },
+      { name: "Tomato", realPrice: 1.80, sellPrice: 2.10 },
+      { name: "Broccoli", realPrice: 1.90, sellPrice: 2.20 },
+      { name: "Spinach", realPrice: 2.20, sellPrice: 2.60 }
+    ];
+
+    // Function to filter products based on button type
+    function filterBy(type) {
+      const productList = document.getElementById("productList");
+      const totalProfitDisplay = document.getElementById("totalProfit");
+      productList.innerHTML = "";
+      totalProfitDisplay.textContent = "";
+
+      let totalProfit = 0;
+
+      products.forEach(product => {
+        let price, profit;
+        if (type === 'sell') {
+          price = product.sellPrice;
+        } else if (type === 'real') {
+          price = product.realPrice;
+          profit = product.sellPrice - product.realPrice;
+          totalProfit += profit;
+        }
+
+        const productName = product.name;
+        const listItem = document.createElement("p");
+        if (type === 'sell') {
+          listItem.textContent = `${productName} - Price: $${price.toFixed(2)}`;
+        } else if (type === 'real') {
+          listItem.textContent = `${productName} - Main Price: $${price.toFixed(2)} - Profit: ${profit >= 0 ? '$' + profit.toFixed(2) : '-$' + Math.abs(profit).toFixed(2)}`;
+        }
+        productList.appendChild(listItem);
+      });
+
+      if (type === 'real') {
+        totalProfitDisplay.textContent = `Total Profit: $${totalProfit.toFixed(2)}`;
+      }
+    }
+  </script>
+</body>
+</html>
