@@ -1,0 +1,40 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Calculator</title>
+</head>
+<body>
+  <h1>Payment Calculator</h1>
+  <label for="restaurantBill">Restaurant Bill:</label>
+  <input type="number" id="restaurantBill"><br><br>
+  <label for="friend1Salary">Friend 1's Monthly Salary:</label>
+  <input type="number" id="friend1Salary"><br><br>
+  <label for="friend2Salary">Friend 2's Monthly Salary:</label>
+  <input type="number" id="friend2Salary"><br><br>
+  <button onclick="calculatePayments()">Submit</button><br><br>
+  <div id="paymentResults"></div>
+
+  <script>
+    function calculatePayments() {
+      const restaurantBill = parseFloat(document.getElementById("restaurantBill").value);
+      const friend1Salary = parseFloat(document.getElementById("friend1Salary").value);
+      const friend2Salary = parseFloat(document.getElementById("friend2Salary").value);
+
+      const totalSalary = friend1Salary + friend2Salary;
+      const friend1Payment = (friend1Salary / totalSalary) * restaurantBill;
+      const friend2Payment = (friend2Salary / totalSalary) * restaurantBill;
+
+      const paymentResults = document.getElementById("paymentResults");
+      paymentResults.innerHTML = `
+        <p>Friend 1 should pay: $${friend1Payment.toFixed(2)}</p>
+        <p>Friend 2 should pay: $${friend2Payment.toFixed(2)}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
