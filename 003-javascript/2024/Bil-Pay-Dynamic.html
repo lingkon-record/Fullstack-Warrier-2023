@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Calculator</title>
+</head>
+<body>
+  <h1>Payment Calculator</h1>
+  <label for="restaurantBill">Restaurant Bill:</label>
+  <input type="number" id="restaurantBill"><br><br>
+  <label for="numFriends">Number of Friends:</label>
+  <input type="number" id="numFriends"><br><br>
+  <div id="friendSalaries"></div><br>
+  <button onclick="generateSalaryInputs()">Generate Salary Inputs</button><br><br>
+  <button onclick="calculatePayments()">Submit</button><br><br>
+  <div id="paymentResults"></div>
+
+  <script>
+    function generateSalaryInputs() {
+      const numFriends = parseInt(document.getElementById("numFriends").value);
+      const friendSalariesDiv = document.getElementById("friendSalaries");
+      friendSalariesDiv.innerHTML = "";
+
+      for (let i = 1; i <= numFriends; i++) {
+        const label = document.createElement("label");
+        label.textContent = `Friend ${i}'s Monthly Salary:`;
+        const input = document.createElement("input");
+        input.type = "number";
+        input.classList.add("friendSalary");
+        friendSalariesDiv.appendChild(label);
+        friendSalariesDiv.appendChild(input);
+        friendSalariesDiv.appendChild(document.createElement("br"));
+      }
+    }
+
+    function calculatePayments() {
+      const restaurantBill = parseFloat(document.getElementById("restaurantBill").value);
+      const friendSalaries = document.querySelectorAll(".friendSalary");
+      const totalSalary = Array.from(friendSalaries).reduce((acc, input) => acc + parseFloat(input.value), 0);
+
+      const paymentResults = document.getElementById("paymentResults");
+      paymentResults.innerHTML = "";
+
+      if (totalSalary === 0) {
+        paymentResults.textContent = "Please enter valid salaries for all friends.";
+        return;
+      }
+
+      friendSalaries.forEach((input, index) => {
+        const friendPayment = (parseFloat(input.value) / totalSalary) * restaurantBill;
+        const paymentParagraph = document.createElement("p");
+        paymentParagraph.textContent = `Friend ${index + 1} should pay: $${friendPayment.toFixed(2)}`;
+        paymentResults.appendChild(paymentParagraph);
+      });
+    }
+  </script>
+</body>
+</html>
