@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>American Men and Job Positions</title>
+</head>
+<body>
+  <h1>American Men and Job Positions</h1>
+  <button onclick="listMenByRate()">List Men by Rate</button><br><br>
+  <div id="results"></div>
+
+  <script>
+    // Sample data
+    const men = [
+      { name: "John Smith", job: "Software Engineer", rate: 10 },
+      { name: "Michael Johnson", job: "Doctor", rate: 8 },
+      { name: "David Williams", job: "Lawyer", rate: 7 },
+      { name: "James Brown", job: "Teacher", rate: 6 },
+      { name: "Robert Jones", job: "Engineer", rate: 9 }
+    ];
+
+    function listMenByRate() {
+      const sortedMen = men.slice().sort((a, b) => b.rate - a.rate);
+
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "";
+
+      sortedMen.forEach((man, index) => {
+        const manDiv = document.createElement("div");
+        manDiv.innerHTML = `
+          <p>Serial: ${index + 1}</p>
+          <p>Name: ${man.name}</p>
+          <p>Job: ${man.job}</p>
+          <p>Rate: ${man.rate}</p>
+          <br>
+        `;
+        resultsDiv.appendChild(manDiv);
+      });
+    }
+  </script>
+</body>
+</html>
