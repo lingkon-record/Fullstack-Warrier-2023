@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tax Calculator</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #container {
+        text-align: center;
+    }
+    input[type="number"], button {
+        padding: 10px;
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    #result {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <h2>Income Tax Calculator</h2>
+    <label for="income">Enter your income:</label>
+    <input type="number" id="income">
+    <button onclick="calculateTax()">Calculate Tax</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    function calculateTax() {
+        const income = parseFloat(document.getElementById('income').value);
+        if (!isNaN(income)) {
+            const taxAmount = income * 0.1;
+            const remainingIncome = income - taxAmount;
+            document.getElementById('result').innerHTML = `
+                <p>Tax Amount: $${taxAmount.toFixed(2)}</p>
+                <p>Remaining Income: $${remainingIncome.toFixed(2)}</p>
+            `;
+        } else {
+            document.getElementById('result').innerHTML = '<p>Please enter a valid income amount.</p>';
+        }
+    }
+</script>
+</body>
+</html>
