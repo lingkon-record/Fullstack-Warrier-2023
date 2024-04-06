@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Islamic Women Assessment</title>
+</head>
+<body>
+  <h1>Islamic Women Assessment</h1>
+  <button onclick="calculateBestGirl()">Calculate Best Girl</button><br><br>
+  <div id="results"></div>
+
+  <script>
+    // Sample data
+    const girls = [
+      { name: "Aisha", age: 25, modesty: 10, chastity: 20, piousCharacter: 15, education: 10, respect: 2, religiousDuties: 15, guardianship: 5, preparationForMarriage: 5 },
+      { name: "Fatima", age: 22, modesty: 25, chastity: 15, piousCharacter: 10, education: 15, respect: 10, religiousDuties: 15, guardianship: 5, preparationForMarriage: 5 },
+      { name: "Khadija", age: 28, modesty: 15, chastity: 25, piousCharacter: 10, education: 10, respect: 15, religiousDuties: 10, guardianship: 5, preparationForMarriage: 10 }
+    ];
+
+    function calculateBestGirl() {
+      const sortedGirls = girls.slice().sort((a, b) => calculateTotalPercentage(b) - calculateTotalPercentage(a));
+
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "";
+
+      sortedGirls.forEach(girl => {
+        const totalPercentage = calculateTotalPercentage(girl);
+        const girlDiv = document.createElement("div");
+        girlDiv.innerHTML = `
+          <p>Name: ${girl.name}</p>
+          <p>Age: ${girl.age}</p>
+          <p>Total Percentage: ${totalPercentage}</p>
+          <br>
+        `;
+        resultsDiv.appendChild(girlDiv);
+      });
+    }
+
+    function calculateTotalPercentage(girl) {
+      return girl.modesty + girl.chastity + girl.piousCharacter + girl.education + girl.respect + girl.religiousDuties + girl.guardianship + girl.preparationForMarriage;
+    }
+  </script>
+</body>
+</html>
