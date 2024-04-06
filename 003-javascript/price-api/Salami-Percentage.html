@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Payment Calculator</title>
+</head>
+<body>
+  <h1>Family Payment Calculator</h1>
+  <label for="totalIncome">Total Income:</label>
+  <input type="number" id="totalIncome"><br><br>
+  <label for="numFamilyMembers">Number of Family Members:</label>
+  <input type="number" id="numFamilyMembers"><br><br>
+  <div id="familyMemberPercentages"></div><br>
+  <button onclick="generatePercentageInputs()">Generate Member Inputs</button><br><br>
+  <button onclick="calculatePayments()">Submit</button><br><br>
+  <div id="paymentResults"></div>
+
+  <script>
+    function generatePercentageInputs() {
+      const numFamilyMembers = parseInt(document.getElementById("numFamilyMembers").value);
+      const familyMemberPercentagesDiv = document.getElementById("familyMemberPercentages");
+      familyMemberPercentagesDiv.innerHTML = "";
+
+      for (let i = 1; i <= numFamilyMembers; i++) {
+        const label = document.createElement("label");
+        label.textContent = `Family Member ${i}'s Percentage Share:`;
+        const input = document.createElement("input");
+        input.type = "number";
+        input.classList.add("familyMemberPercentage");
+        familyMemberPercentagesDiv.appendChild(label);
+        familyMemberPercentagesDiv.appendChild(input);
+        familyMemberPercentagesDiv.appendChild(document.createElement("br"));
+      }
+    }
+
+    function calculatePayments() {
+      const totalIncome = parseFloat(document.getElementById("totalIncome").value);
+      const familyMemberPercentages = document.querySelectorAll(".familyMemberPercentage");
+      const totalPercentage = Array.from(familyMemberPercentages).reduce((acc, input) => acc + parseFloat(input.value), 0);
+
+      const paymentResults = document.getElementById("paymentResults");
+      paymentResults.innerHTML = "";
+
+      if (totalPercentage !== 100) {
+        paymentResults.textContent = "Total percentage must equal 100%. Please adjust the percentages.";
+        return;
+      }
+
+      familyMemberPercentages.forEach((input, index) => {
+        const memberPayment = (parseFloat(input.value) / 100) * totalIncome;
+        const paymentParagraph = document.createElement("p");
+        paymentParagraph.textContent = `Family Member ${index + 1} should receive: $${memberPayment.toFixed(2)}`;
+        paymentResults.appendChild(paymentParagraph);
+      });
+    }
+  </script>
+</body>
+</html>
