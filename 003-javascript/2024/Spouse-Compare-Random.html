@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spouse Comparison</title>
+  <style>
+    /* Basic CSS styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Spouse Comparison</h1>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    // Sample JSON data (replace with your own data)
+    const jsonData = {
+      "male": [
+        {"name": "John", "age": 35},
+        {"name": "Michael", "age": 40},
+        {"name": "David", "age": 30},
+        // Add more male names and ages as needed
+      ],
+      "female": [
+        {"name": "Emily", "age": 32},
+        {"name": "Sarah", "age": 38},
+        {"name": "Emma", "age": 33},
+        // Add more female names and ages as needed
+      ]
+    };
+
+    // Function to randomly select an item from an array
+    function getRandomItem(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
+
+    // Randomly select one male name and one female name
+    const maleName = getRandomItem(jsonData.male);
+    const femaleName = getRandomItem(jsonData.female);
+
+    // Determine spouse comparison message
+    let message = `${maleName.name} and ${femaleName.name} are spouses.\n`;
+
+    // Compare ages
+    if (maleName.age === femaleName.age) {
+      message += `They are the same age.`;
+    } else if (maleName.age > femaleName.age) {
+      message += `${maleName.name} is older than ${femaleName.name} by ${maleName.age - femaleName.age} years.`;
+    } else {
+      message += `${femaleName.name} is older than ${maleName.name} by ${femaleName.age - maleName.age} years.`;
+    }
+
+    // Display the message in HTML
+    document.getElementById('result').innerText = message;
+  </script>
+</body>
+</html>
