@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Box with Columns</title>
+<style>
+    .container {
+        border: 2px solid #000;
+        padding: 20px;
+        background-color: #f0f0f0;
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        background-color: #ffc;
+        padding: 10px;
+    }
+
+    .columns {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        background-color: #ddd;
+        padding: 10px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    /* Optional: Add styles for better readability */
+    p {
+        margin-bottom: 10px;
+    }
+
+    .column:nth-child(1) { background-color: #ffc; }
+    .column:nth-child(2) { background-color: #cfc; }
+    .column:nth-child(3) { background-color: #ccf; }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="headline">Headline</div>
+    <div class="columns">
+        <div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla magna ut eros sodales tincidunt. Nam eu purus nec elit consequat dictum ac sed nunc. Vestibulum sed tincidunt eros. Suspendisse potenti.</p>
+        </div>
+        <div class="column">
+            <p>Integer sed nulla ac purus efficitur vestibulum. Curabitur vitae urna dapibus, fringilla eros sit amet, viverra sapien. Sed auctor felis id neque faucibus sodales.</p>
+        </div>
+        <div class="column">
+            <p>Quisque id lorem ut lorem auctor suscipit. Phasellus ultricies, quam at sodales viverra, sem sapien posuere odio, eget placerat risus nulla in dolor. Nunc in purus vel dui dignissim varius ac nec libero.</p>
+        </div>
+        <!-- More paragraphs can be added here -->
+    </div>
+</div>
+
+</body>
+</html>
