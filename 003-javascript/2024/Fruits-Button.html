@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit and Vegetable Game</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<h1>Fruit and Vegetable Game</h1>
+<div id="itemDisplay"></div>
+<div id="buttons">
+    <button id="vegetableButton">Vegetables</button>
+    <button id="fruitButton">Fruits</button>
+</div>
+<script>
+    const items = [
+        { name: "Apple", category: "fruit" },
+        { name: "Banana", category: "fruit" },
+        { name: "Carrot", category: "vegetable" },
+        { name: "Broccoli", category: "vegetable" },
+        { name: "Orange", category: "fruit" },
+        { name: "Lettuce", category: "vegetable" },
+        { name: "Grapes", category: "fruit" },
+        { name: "Tomato", category: "vegetable" }
+    ];
+
+    const itemDisplay = document.getElementById("itemDisplay");
+    const vegetableButton = document.getElementById("vegetableButton");
+    const fruitButton = document.getElementById("fruitButton");
+
+    let currentItem;
+
+    function generateRandomItem() {
+        currentItem = items[Math.floor(Math.random() * items.length)];
+        itemDisplay.innerText = `Guess whether ${currentItem.name} is a fruit or a vegetable!`;
+    }
+
+    function checkCategory(category) {
+        if (currentItem.category === category) {
+            alert("Correct!");
+        } else {
+            alert("This is not right.");
+        }
+        generateRandomItem();
+    }
+
+    vegetableButton.addEventListener("click", () => checkCategory("vegetable"));
+    fruitButton.addEventListener("click", () => checkCategory("fruit"));
+
+    generateRandomItem();
+</script>
+</body>
+</html>
