@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Highest Data</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        margin: 5px;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #result {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button onclick="showHighest('wife')">Highest Wife</button>
+    <button onclick="showHighest('child')">Highest Child</button>
+    <button onclick="showHighest('age')">Highest Age</button>
+    <button onclick="showHighest('salary')">Highest Salary</button>
+    <div id="result"></div>
+</div>
+
+<script>
+    // Sample data
+    const data = [
+        { name: "John", wife: 1, child: 2, age: 35, salary: 80000 },
+        { name: "Alice", wife: 0, child: 1, age: 40, salary: 90000 },
+        { name: "Bob", wife: 1, child: 3, age: 45, salary: 95000 },
+        { name: "Emily", wife: 1, child: 2, age: 30, salary: 110000 },
+        { name: "Michael", wife: 1, child: 1, age: 50, salary: 120000 }
+    ];
+
+    function showHighest(property) {
+        let highestData = null;
+        let highestValue = -Infinity;
+
+        data.forEach(person => {
+            if (person[property] > highestValue) {
+                highestValue = person[property];
+                highestData = person;
+            }
+        });
+
+        const resultDiv = document.getElementById("result");
+        resultDiv.textContent = `Highest ${property}: ${highestData[property]}, Name: ${highestData.name}`;
+    }
+</script>
+
+</body>
+</html>
