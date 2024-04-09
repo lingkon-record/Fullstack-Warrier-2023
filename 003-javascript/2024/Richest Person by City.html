@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Richest Person by City</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: center;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+    #richestList {
+        list-style: none;
+        padding: 0;
+    }
+    #richestList li {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <button onclick="showTopRichest()">Show Top Richest by City</button>
+    <ul id="richestList"></ul>
+</div>
+
+<script>
+    // Sample data structure
+    const data = [
+        { name: "John", wealth: 100000, city: "Dubai" },
+        { name: "Alice", wealth: 90000, city: "Dubai" },
+        { name: "Bob", wealth: 95000, city: "Dubai" },
+        { name: "Emily", wealth: 110000, city: "Dubai" },
+        { name: "Michael", wealth: 120000, city: "Dubai" },
+        { name: "David", wealth: 80000, city: "New York" },
+        { name: "Emma", wealth: 85000, city: "New York" },
+        { name: "Olivia", wealth: 92000, city: "New York" },
+        { name: "James", wealth: 105000, city: "New York" },
+        { name: "Sophia", wealth: 115000, city: "New York" },
+        { name: "William", wealth: 75000, city: "Bali" },
+        { name: "Isabella", wealth: 82000, city: "Bali" },
+        { name: "Daniel", wealth: 88000, city: "Bali" },
+        { name: "Mia", wealth: 95000, city: "Bali" },
+        { name: "Alexander", wealth: 102000, city: "Bali" },
+        { name: "Ethan", wealth: 70000, city: "Dhaka" },
+        { name: "Charlotte", wealth: 78000, city: "Dhaka" },
+        { name: "Alexander", wealth: 83000, city: "Dhaka" },
+        { name: "Amelia", wealth: 91000, city: "Dhaka" },
+        { name: "Harper", wealth: 99000, city: "Dhaka" }
+    ];
+
+    function showTopRichest() {
+        const cities = {};
+        data.forEach(person => {
+            if (!cities[person.city] || person.wealth > cities[person.city].wealth) {
+                cities[person.city] = { name: person.name, wealth: person.wealth };
+            }
+        });
+
+        const richestList = document.getElementById("richestList");
+        richestList.innerHTML = "";
+        for (let city in cities) {
+            const richestPerson = cities[city];
+            const listItem = document.createElement("li");
+            listItem.textContent = `City: ${city}, Richest Person: ${richestPerson.name}, Wealth: ${richestPerson.wealth}`;
+            richestList.appendChild(listItem);
+        }
+    }
+</script>
+
+</body>
+</html>
