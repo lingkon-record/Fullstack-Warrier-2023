@@ -11,5 +11,5 @@ const oceans = [
 // Remove oceans where humans are not present
 const oceansWithHumans = oceans.filter(ocean => ocean.humans);
 
-// Display updated array
+// Display updated array in console
 console.log('Oceans with Humans:', oceansWithHumans);
