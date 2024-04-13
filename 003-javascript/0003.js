@@ -4,7 +4,7 @@ function Animal(name, type) {
   this.type = type;
 }
 
-// Create animal instances
+
 const lion = new Animal("Simba", "Lion");
 const elephant = new Animal("Dumbo", "Elephant");
 
@@ -12,4 +12,4 @@ const elephant = new Animal("Dumbo", "Elephant");
 console.log("Animal 1: " + lion.name + " is a " + lion.type);
 console.log("Animal 2: " + elephant.name + " is an " + elephant.type);
 
-// next example will be added
+// next
