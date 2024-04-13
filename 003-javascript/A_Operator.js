@@ -14,11 +14,11 @@ console.log(`Multiplication: ${multiplicationResult}`);
 console.log(`Division: ${divisionResult}`);
 console.log(`Modulus: ${modulusResult}`);
 
-// Comparison Operators
+// Comparison Operator
 const x = 5;
 const y = 8;
 
-console.log("Comparison Operators:");
+console.log("Comparison Operator:");
 console.log(`x > y: ${x > y}`);
 console.log(`x < y: ${x < y}`);
 console.log(`x >= y: ${x >= y}`);
@@ -30,7 +30,7 @@ console.log(`x !== y: ${x !== y}`);
 const isTrue = true;
 const isFalse = false;
 
-console.log("Logical Operators:");
+console.log("Logical Operator:");
 console.log(`AND (isTrue && isFalse): ${isTrue && isFalse}`);
 console.log(`OR (isTrue || isFalse): ${isTrue || isFalse}`);
 console.log(`NOT (!isTrue): ${!isTrue}`);
