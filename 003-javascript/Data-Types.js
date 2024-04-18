@@ -1,4 +1,4 @@
- // String
+ // String - example 
 let myString = "Hello, JavaScript!";
 
 // Number
