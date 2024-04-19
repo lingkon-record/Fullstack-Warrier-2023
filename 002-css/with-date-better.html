@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .year {
+            color: orange;
+            font-weight: bold;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <footer>
+        <p>&copy; Copyright <span class="year">0000</span></p>
+      
+    </footer>
+
+    <script>
+        // Get & Store Date
+        var today = new Date();
+        today = today.getFullYear();
+
+        // Display Date
+        document.querySelector(".year").textContent = today;
+    </script>
+</body>
+</html>

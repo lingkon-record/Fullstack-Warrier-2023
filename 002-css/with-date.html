@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .year {
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <footer>
+      <p>&copy; Copyright <span class="year">0000</span></p>
+    </footer>
+
+    <script>
+      // Get & Store Date
+      var today = new Date();
+      today = today.getFullYear();
+
+      // Check Date
+      console.log(today);
+
+      // Display Date
+      document.querySelector(".year").textContent = today;
+    </script>
+  </body>
+</html>
