@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      form input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+
+      #messageDisplay {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cute Message</h2>
+      <form id="messageForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="messageDisplay"></div>
+    </div>
+    <script>
+      document
+        .getElementById("messageForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var name = document.getElementById("name").value;
+          var dob = new Date(document.getElementById("dob").value);
+          var today = new Date();
+
+          // Calculate age
+          var age = today.getFullYear() - dob.getFullYear();
+          var monthDiff = today.getMonth() - dob.getMonth();
+          if (
+            monthDiff < 0 ||
+            (monthDiff === 0 && today.getDate() < dob.getDate())
+          ) {
+            age--;
+          }
+
+          var message =
+            "Hey there, " +
+            name +
+            "! You're " +
+            age +
+            " years old. You're as young as the day is long!";
+
+          document.getElementById("messageDisplay").innerText = message;
+        });
+    </script>
+  </body>
+</html>
