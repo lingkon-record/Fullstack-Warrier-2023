@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim Name Idea</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 18px;
+      margin: 10px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #output {
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: left;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #output p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Muslim Name Idea</h1>
+    <label for="input">Enter a letter (A-Z):</label>
+    <input type="text" id="input" maxlength="1">
+    <button onclick="suggestName()">Get Name</button>
+    <div id="output"></div>
+  </div>
+  <script>
+   const names = {
+  A: ["Aisha", "Abdullah", "Ahmed", "Amira", "Ali", "Amina"],
+  B: ["Bilal", "Basim", "Bader", "Bahira", "Bashir", "Batul"],
+  C: ["Cemal", "Cihad", "Cemil", "Cennet", "Cahit", "Celal"],
+  D: ["Dawud", "Dalia", "Daud", "Diyar", "Dalal", "Danish"],
+  E: ["Eid", "Eman", "Ehsan", "Ezra", "Elham", "Elif"],
+  F: ["Fatima", "Faris", "Faisal", "Fawzia", "Fadil", "Faiza"],
+  G: ["Ghulam", "Ghazala", "Ghalib", "Gulzar", "Gulnar", "Gulzar"],
+  H: ["Hassan", "Hadi", "Huda", "Hafsa", "Hasan", "Hamza"],
+  I: ["Ibrahim", "Isra", "Ismail", "Iman", "Iqbal", "Iffat"],
+  J: ["Jamal", "Jalal", "Jasmin", "Jibril", "Jawad", "Jamil"],
+  K: ["Khalid", "Khadija", "Kamran", "Kausar", "Kareem", "Khurshid"],
+  L: ["Layla", "Lina", "Luqman", "Latif", "Lamia", "Lutfi"],
+  M: ["Mohammed", "Mariam", "Mustafa", "Muna", "Mahmoud", "Mehmet"],
+  N: ["Nasir", "Nadia", "Najib", "Nour", "Naima", "Nadia"],
+  O: ["Omar", "Othman", "Osman", "Omar", "Ola", "Ozlem"],
+  P: ["Parvez", "Pari", "Pervin", "Parisa", "Pakiza", "Peyman"],
+  Q: ["Qasim", "Qamar", "Qadir", "Qamar", "Qadira", "Qudsia"],
+  R: ["Rashid", "Rania", "Raza", "Rabia", "Rahim", "Rafi"],
+  S: ["Saeed", "Sana", "Salman", "Samira", "Safiyah", "Safi"],
+  T: ["Tariq", "Talha", "Tasneem", "Tahira", "Tahir", "Tayyib"],
+  U: ["Usman", "Umar", "Umair", "Umm", "Uzma", "Umayma"],
+  V: ["Vahid", "Veda", "Vakil", "Vasim", "Vafa", "Vivek"],
+  W: ["Wahid", "Warda", "Waseem", "Wali", "Wajid", "Wafa"],
+  X: ["Xavier", "Xena", "Xerxes", "Xyla", "Xabat", "Xia"],
+  Y: ["Yusuf", "Yasmin", "Yasin", "Yasir", "Yusra", "Yahya"],
+  Z: ["Zayn", "Zahra", "Zakir", "Zara", "Zafar", "Zoha"]
+};
+
+
+    function suggestName() {
+      const input = document.getElementById("input").value.toUpperCase();
+      const output = document.getElementById("output");
+      
+      if (input.length === 1 && input >= "A" && input <= "Z") {
+        const suggestedNames = names[input] || [];
+        if (suggestedNames.length > 0) {
+          let outputText = "<h2>Suggested Islamic names for '" + input + "':</h2>";
+          suggestedNames.forEach((name, index) => {
+            outputText += "<p>" + (index + 1) + ". " + name + "</p>";
+          });
+          output.innerHTML = outputText;
+        } else {
+          output.innerHTML = "<p>No Islamic names found for '" + input + "'.</p>";
+        }
+      } else {
+        output.innerHTML = "<p>Please enter a single letter (A-Z).</p>";
+      }
+    }
+  </script>
+</body>
+</html>
