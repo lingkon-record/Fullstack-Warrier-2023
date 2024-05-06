@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        /* Styles for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styles for table header */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            text-align: left;
+            border-bottom: 2px solid #ddd;
+        }
+        
+        /* Styles for table cells */
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        /* Styles for even rows */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for the input fields */
+        .input-field {
+            margin-bottom: 10px;
+        }
+
+        .input-btn {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .input-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="name" class="input-field" placeholder="Name">
+        <input type="number" id="age" class="input-field" placeholder="Age">
+        <input type="text" id="city" class="input-field" placeholder="City">
+        <button class="input-btn" onclick="submitData()">Submit</button>
+    </div>
+
+    <table id="data-table">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+    </table>
+
+    <script>
+        function submitData() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var city = document.getElementById("city").value;
+            if (name && age && city) {
+                var table = document.getElementById("data-table");
+                var newRow = table.insertRow(-1);
+                var cell1 = newRow.insertCell(0);
+                var cell2 = newRow.insertCell(1);
+                var cell3 = newRow.insertCell(2);
+                cell1.innerHTML = name;
+                cell2.innerHTML = age;
+                cell3.innerHTML = city;
+            } else {
+                alert("Please fill out all fields.");
+            }
+        }
+    </script>
+</body>
+</html>
