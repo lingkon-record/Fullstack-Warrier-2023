@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    button {
+      margin-bottom: 10px;
+    }
+
+    .family-info {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Family</h1>
+
+  <!-- Buttons for each wife -->
+  <button onclick="showFamily('Ayesha')">Ayesha</button>
+  <button onclick="showFamily('Fatima')">Fatima</button>
+  <button onclick="showFamily('Khadija')">Khadija</button>
+  <button onclick="showFamily('Zainab')">Zainab</button>
+
+  <!-- Container to display family information -->
+  <div class="family-info" id="familyInfo"></div>
+
+  <script>
+    // Family data
+    const familyData = [
+      {
+        wife: 'Ayesha',
+        children: [
+          { name: 'Ali', birthdate: '2000-01-01' },
+          { name: 'Hassan', birthdate: '2002-03-15' },
+          { name: 'Hussein', birthdate: '2005-07-20' },
+          { name: 'Zara', birthdate: '2001-05-10' },
+          { name: 'Aisha', birthdate: '2003-09-25' },
+          { name: 'Fatima', birthdate: '2006-11-30' }
+        ]
+      },
+      {
+        wife: 'Fatima',
+        children: [
+          { name: 'Omar', birthdate: '1998-12-25' },
+          { name: 'Sara', birthdate: '2000-08-08' },
+          { name: 'Zubair', birthdate: '2003-04-17' },
+          { name: 'Ayesha', birthdate: '1999-10-30' },
+          { name: 'Khadija', birthdate: '2002-06-12' },
+          { name: 'Imran', birthdate: '2005-09-22' }
+        ]
+      },
+      {
+        wife: 'Khadija',
+        children: [
+          { name: 'Usman', birthdate: '2001-03-20' },
+          { name: 'Ahmed', birthdate: '2004-07-05' },
+          { name: 'Amir', birthdate: '2007-09-15' },
+          { name: 'Mariam', birthdate: '2002-01-10' },
+          { name: 'Nadia', birthdate: '2006-12-28' },
+          { name: 'Zainab', birthdate: '2009-11-18' }
+        ]
+      },
+      {
+        wife: 'Zainab',
+        children: [
+          { name: 'Farhan', birthdate: '2002-04-10' },
+          { name: 'Hamza', birthdate: '2005-06-15' },
+          { name: 'Sadia', birthdate: '2007-08-20' },
+          { name: 'Bilal', birthdate: '2003-02-05' },
+          { name: 'Amina', birthdate: '2006-10-12' },
+          { name: 'Ibrahim', birthdate: '2009-12-25' }
+        ]
+      }
+    ];
+
+    // Function to show family information for a specific wife
+    function showFamily(wifeName) {
+      const wifeData = familyData.find(data => data.wife === wifeName);
+      if (wifeData) {
+        const childrenInfo = wifeData.children.map(child => `${child.name} - ${child.birthdate}`).join('<br>');
+        document.getElementById('familyInfo').innerHTML = `<h2>${wifeName}'s Children</h2>${childrenInfo}`;
+      } else {
+        document.getElementById('familyInfo').innerHTML = `<p>No information found for ${wifeName}</p>`;
+      }
+    }
+  </script>
+</body>
+  </html>
+  
