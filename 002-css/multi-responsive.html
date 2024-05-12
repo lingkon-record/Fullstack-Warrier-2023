@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Usage Examples</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Blog layout */
+  .blog-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Box */
+  .box {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .grid-image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  /* Popup */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    display: none;
+  }
+
+  .popup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Popup Button */
+  .popup-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Hover Effect */
+  .popup:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+</style>
+</head>
+<body>
+
+<!-- Blog Layout -->
+<div class="blog-container">
+  <h2>Blog Post Title</h2>
+  <img class="blog-image" src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Blog Image">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero ut urna consequat mollis.</p>
+</div>
+
+<!-- Box -->
+<div class="box">
+  <img class="box-image" src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Box Image">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</div>
+
+<!-- Grid -->
+<div class="grid-container">
+  <div class="grid-item">
+    <img class="grid-image" src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Grid Image">
+  </div>
+  <div class="grid-item">
+    <img class="grid-image" src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Grid Image">
+  </div>
+  <div class="grid-item">
+    <img class="grid-image" src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Grid Image">
+  </div>
+</div>
+
+<!-- Popup -->
+<button class="popup-btn">Open Popup</button>
+<div class="popup">
+  <span class="close-btn">X</span>
+  <img src="https://www.pranfoods.net/sites/default/files/2023-07/frooto-brand-banner-1920x900-A2_0.jpg" alt="Popup Image">
+</div>
+
+<script>
+  // Popup functionality
+  const popupBtn = document.querySelector('.popup-btn');
+  const popup = document.querySelector('.popup');
+  const closeBtn = document.querySelector('.close-btn');
+
+  popupBtn.addEventListener('click', () => {
+    popup.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>
