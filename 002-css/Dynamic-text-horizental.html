@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dynamic Text Movement</title>
+<style>
+  .text-container {
+    position: relative;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    overflow: hidden;
+  }
+
+  .moving-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: moveText 10s linear infinite;
+  }
+
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="text-container">
+  <div class="moving-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac magna nec purus consequat convallis.</div>
+</div>
+
+</body>
+</html>
