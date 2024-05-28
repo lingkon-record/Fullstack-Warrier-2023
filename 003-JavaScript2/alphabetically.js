@@ -1,3 +1,4 @@
+
 const cities = [
   { name: "Shanghai", population: 26317104 },
   { name: "Sao Paulo", population: 21846507 },
@@ -9,10 +10,10 @@ const cities = [
   { name: "Osaka", population: 19222665 }
 ];
 
-// Sort cities alphabetically
+
 cities.sort((a, b) => a.name.localeCompare(b.name));
 
-// Display cities and populations
+
 cities.forEach(city => {
   console.log(`${city.name} (Population: ${city.population.toLocaleString()})`);
 });
