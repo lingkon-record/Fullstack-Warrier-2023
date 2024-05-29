@@ -16,6 +16,8 @@ switch (dayOfWeek) {
     break;
 
   default:
-    console.log("Weekend is near.");
+    console.log("Weekend is near");
     break;
 }
+
+// day-off code
