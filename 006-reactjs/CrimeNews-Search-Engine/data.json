@@ -1,0 +1,43 @@
+{
+    "countries": [
+      {
+        "name": "Bangladesh",
+        "crimes": [
+          {
+            "name": "Drugs",
+            "images": [
+              "https://i.ytimg.com/vi/8tvY0GACxxc/maxresdefault.jpg",
+              "https://www.newagebd.com/files/records/news/202102/129385_197.jpg",
+              "https://www.observerbd.com/2023/06/13/ob_1686645225.jpg"
+
+
+              
+            ]
+          },
+          {
+            "name": "Police",
+            "images": [
+              "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Mass_uprising_1969_Daily_Azad.jpg/800px-Mass_uprising_1969_Daily_Azad.jpg",
+              "https://example.com/images/assault2.jpg"
+            ]
+          }
+          
+        ]
+      },
+      {
+        "name": "India",
+        "crimes": [
+          {
+            "name": "Theft",
+            "images": [
+              "https://feeds.abplive.com/onecms/images/uploaded-images/2024/05/05/b7fcfa8d31aa17c3967552bd4db2a4ca1714889342446170_original.jpg?impolicy=abp_cdn&imwidth=381",
+              "https://example.com/images/theft2.jpg"
+            ]
+          }
+          
+        ]
+      }
+      
+    ]
+  }
+  
