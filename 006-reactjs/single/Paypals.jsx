@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from 'react';
 
 const initialAccounts = [
@@ -223,7 +222,7 @@ const App = () => {
                 ))}
               </ul>
             ) : (
-              <p className="text-gray-500">No history yet.</p>
+              <p className="text-gray-500">No history yet</p>
             )}
           </div>
         )}
