@@ -7,7 +7,7 @@ const footballTeam = {
   trophies: 0
 };
 
-// Using Nullish Coalescing Operator (??) to provide default values
+// Using Nullish Coalescing Operator (??) ,, provide default values
 const teamName = footballTeam.name ?? 'Unknown Team';
 const stadium = footballTeam.stadium ?? 'Unknown Stadium';
 const manager = footballTeam.manager ?? 'No Manager Assigned';
