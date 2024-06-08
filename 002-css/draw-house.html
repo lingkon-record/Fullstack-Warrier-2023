@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Drawing</title>
+  <style>
+    .house {
+      width: 200px;
+      height: 200px;
+      position: relative;
+    }
+
+    .roof {
+      width: 0;
+      height: 0;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid #8b4513;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .wall {
+      width: 200px;
+      height: 100px;
+      background-color: #ffcc66;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .door {
+      width: 40px;
+      height: 80px;
+      background-color: #a0522d;
+      position: absolute;
+      bottom: 10px;
+      left: 80px;
+    }
+
+    .window {
+      width: 40px;
+      height: 40px;
+      background-color: #87ceeb;
+      position: absolute;
+      top: 40px;
+      left: 60px;
+    }
+
+    .window::before,
+    .window::after {
+      content: '';
+      width: 20px;
+      height: 1px;
+      background-color: #000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .window::before {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .window::after {
+      transform: translate(-50%, -50%) rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="house">
+    <div class="roof"></div>
+    <div class="wall"></div>
+    <div class="door"></div>
+    <div class="window"></div>
+  </div>
+</body>
+</html>
