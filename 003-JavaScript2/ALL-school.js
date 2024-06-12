@@ -1,8 +1,8 @@
 const students = [
     { name: "John", school: "Ideal School and College" },
-    { name: "Alice", school: "RAJUK Uttara Model College" },
+    { name: "Alice", school: "RAJUK Uttara College" },
     { name: "Bob", school: "Jalalabad Cantonment Public School & College" },
-    { name: "Sarah", school: "St. Joseph Higher Secondary School" },
+    { name: "Sarah", school: "Dhaka Junior School" },
     { name: "David", school: "Dhaka Residential Model College" },
     { name: "Emily", school: "Comilla Modern High School" },
     { name: "Michael", school: "Chittagong Collegiate School and College" },
