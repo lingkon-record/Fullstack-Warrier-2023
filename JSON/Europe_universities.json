@@ -1,0 +1,79 @@
+{
+  "universities": [
+    {
+      "name": "University of Oxford",
+      "country": "United Kingdom",
+      "city": "Oxford",
+      "bachelor_programs": [
+        "Computer Science",
+        "Physics",
+        "Philosophy, Politics and Economics (PPE)",
+        "Engineering Science",
+        "Law",
+        "Medicine",
+        "Mathematics",
+        "History"
+      ]
+    },
+    {
+      "name": "University of Cambridge",
+      "country": "United Kingdom",
+      "city": "Cambridge",
+      "bachelor_programs": [
+        "Engineering",
+        "Natural Sciences",
+        "Economics",
+        "Human, Social, and Political Sciences (HSPS)",
+        "Computer Science",
+        "Law",
+        "Medicine",
+        "Mathematics"
+      ]
+    },
+    {
+      "name": "ETH Zurich",
+      "country": "Switzerland",
+      "city": "Zurich",
+      "bachelor_programs": [
+        "Architecture",
+        "Civil Engineering",
+        "Mechanical Engineering",
+        "Electrical Engineering and Information Technology",
+        "Computer Science",
+        "Mathematics",
+        "Physics",
+        "Biology"
+      ]
+    },
+    {
+      "name": "University of Copenhagen",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "bachelor_programs": [
+        "Biochemistry",
+        "Computer Science",
+        "Economics",
+        "Physics",
+        "Mathematics",
+        "Medicine",
+        "Political Science",
+        "Psychology"
+      ]
+    },
+    {
+      "name": "University of Helsinki",
+      "country": "Finland",
+      "city": "Helsinki",
+      "bachelor_programs": [
+        "Agricultural Sciences",
+        "Computer Science",
+        "Economics",
+        "Environmental Sciences",
+        "Mathematics and Statistics",
+        "Medicine",
+        "Psychology",
+        "Social Sciences"
+      ]
+    }
+  ]
+}
