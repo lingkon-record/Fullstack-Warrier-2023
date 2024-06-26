@@ -8,8 +8,8 @@ const namesData = [
   { name: 'Sana', height: 5.4, age: 14 },
   { name: 'Hina', height: 5.5, age: 13 },
   { name: 'Rabia', height: 5.3, age: 16 },
-  { name: 'Saba', height: 5.2, age: 11 },
-  { name: 'Nida', height: 5.6, age: 18 },
+  { name: 'Jakia', height: 5.2, age: 11 },
+  { name: 'Nida', height: 5.6, age: 21 },
   { name: 'Anum', height: 5.8, age: 19 },
 ];
 
