@@ -3,14 +3,14 @@ import React from 'react';
 const namesData = [
   { name: 'Aisha', height: 5.2 },
   { name: 'Fatima', height: 5.3 },
-  { name: 'Zara', height: 5.7 },
+  { name: 'Joba', height: 5.7 },
   { name: 'Maira', height: 5.1 },
   { name: 'Sana', height: 5.4 },
   { name: 'Hina', height: 5.5 },
   { name: 'Rabia', height: 5.3 },
-  { name: 'Saba', height: 5.2 },
+  { name: 'Nadia', height: 5.2 },
   { name: 'Nida', height: 5.6 },
-  { name: 'Anum', height: 5.8 },
+  { name: 'Khadiza', height: 5.8 },
 ];
 
 const sortedNames = namesData.sort((a, b) => b.height - a.height);
