@@ -1,11 +1,8 @@
-// src/components/HomePage.js
-
 import React from 'react';
 
 const HomePage = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      {/* Logo */}
       <div className="mt-10">
         <img
           src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
@@ -14,6 +11,7 @@ const HomePage = () => {
         />
       </div>
 
+      
       {/* Search Bar */}
       <div className="w-full max-w-xl mt-10">
         <div className="flex items-center border border-gray-300 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -41,6 +39,8 @@ const HomePage = () => {
         </div>
       </div>
 
+
+      
       {/* Buttons */}
       <div className="mt-8 space-x-4">
         <button className="bg-gray-200 p-2 px-4 rounded-md hover:bg-gray-300 transition duration-200">
