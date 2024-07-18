@@ -1,7 +1,6 @@
 import React from 'react';
 
 const IslamicCities = () => {
-  // List of Islamic cities
   const islamicCities = [
     { name: 'Mecca', country: 'Saudi Arabia' },
     { name: 'Medina', country: 'Saudi Arabia' },
@@ -10,14 +9,13 @@ const IslamicCities = () => {
     { name: 'Cairo', country: 'Egypt' },
     { name: 'Baghdad', country: 'Iraq' },
     { name: 'Damascus', country: 'Syria' },
-    { name: 'Fez', country: 'Morocco' },
     { name: 'Granada', country: 'Spain' },
     { name: 'Kairouan', country: 'Tunisia' }
   ];
 
   return (
     <div>
-      <h1>Islamic Cities</h1>
+      <h1>Islamic City</h1>
       <ul>
         {islamicCities.map(city => (
           <li key={city.name}>
