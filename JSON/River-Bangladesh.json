@@ -1,0 +1,93 @@
+ {
+  "rivers": [
+    {
+      "name": "Padma",
+      "location": "Central Bangladesh",
+      "route": [
+        "Rajshahi",
+        "Pabna",
+        "Kushtia",
+        "Faridpur",
+        "Munshiganj"
+      ],
+      "districts": [
+        "Rajshahi",
+        "Pabna",
+        "Kushtia",
+        "Rajbari",
+        "Faridpur",
+        "Madaripur",
+        "Munshiganj",
+        "Shariatpur"
+      ]
+    },
+    {
+      "name": "Meghna",
+      "location": "Eastern Bangladesh",
+      "route": [
+        "Sunamganj",
+        "Kishoreganj",
+        "Brahmanbaria",
+        "Comilla",
+        "Chandpur"
+      ],
+      "districts": [
+        "Sunamganj",
+        "Sylhet",
+        "Kishoreganj",
+        "Brahmanbaria",
+        "Narsingdi",
+        "Comilla",
+        "Chandpur",
+        "Lakshmipur"
+      ]
+    },
+    {
+      "name": "Jamuna",
+      "location": "Northern Bangladesh",
+      "route": [
+        "Sirajganj",
+        "Tangail",
+        "Jamalpur"
+      ],
+      "districts": [
+        "Kurigram",
+        "Gaibandha",
+        "Bogra",
+        "Sirajganj",
+        "Pabna",
+        "Tangail",
+        "Jamalpur"
+      ]
+    },
+    {
+      "name": "Brahmaputra",
+      "location": "Northern Bangladesh",
+      "route": [
+        "Kurigram",
+        "Jamalpur",
+        "Mymensingh"
+      ],
+      "districts": [
+        "Kurigram",
+        "Gaibandha",
+        "Jamalpur",
+        "Sherpur",
+        "Mymensingh"
+      ]
+    },
+    {
+      "name": "Karnaphuli",
+      "location": "Southeastern Bangladesh",
+      "route": [
+        "Chittagong",
+        "Rangamati"
+      ],
+      "districts": [
+        "Rangamati",
+        "Chittagong",
+        "Cox's Bazar"
+      ]
+    }
+  ]
+ }
