@@ -1,0 +1,114 @@
+ {
+  "rivers": [
+    {
+      "name": "Ganges",
+      "location": "Northern India",
+      "route": [
+        "Uttarakhand",
+        "Uttar Pradesh",
+        "Bihar",
+        "Jharkhand",
+        "West Bengal"
+      ],
+      "districts": [
+        "Haridwar",
+        "Varanasi",
+        "Patna",
+        "Bhagalpur",
+        "Howrah",
+        "Kolkata"
+      ]
+    },
+    {
+      "name": "Yamuna",
+      "location": "Northern India",
+      "route": [
+        "Uttarakhand",
+        "Himachal Pradesh",
+        "Haryana",
+        "Delhi",
+        "Uttar Pradesh"
+      ],
+      "districts": [
+        "Yamunotri",
+        "Delhi",
+        "Agra",
+        "Mathura",
+        "Allahabad"
+      ]
+    },
+    {
+      "name": "Brahmaputra",
+      "location": "Northeastern India",
+      "route": [
+        "Arunachal Pradesh",
+        "Assam"
+      ],
+      "districts": [
+        "Tawang",
+        "Dibrugarh",
+        "Guwahati",
+        "Tezpur"
+      ]
+    },
+    {
+      "name": "Narmada",
+      "location": "Central India",
+      "route": [
+        "Madhya Pradesh",
+        "Maharashtra",
+        "Gujarat"
+      ],
+      "districts": [
+        "Jabalpur",
+        "Narmadapuram",
+        "Barwani",
+        "Bharuch"
+      ]
+    },
+    {
+      "name": "Godavari",
+      "location": "Central to Southern India",
+      "route": [
+        "Maharashtra",
+        "Telangana",
+        "Andhra Pradesh"
+      ],
+      "districts": [
+        "Nasik",
+        "Nanded",
+        "Rajahmundry",
+        "Kakinada"
+      ]
+    },
+    {
+      "name": "Krishna",
+      "location": "Southern India",
+      "route": [
+        "Maharashtra",
+        "Karnataka",
+        "Andhra Pradesh"
+      ],
+      "districts": [
+        "Satara",
+        "Sangli",
+        "Vijayawada",
+        "Machilipatnam"
+      ]
+    },
+    {
+      "name": "Cauvery",
+      "location": "Southern India",
+      "route": [
+        "Karnataka",
+        "Tamil Nadu"
+      ],
+      "districts": [
+        "Mysuru",
+        "Mandya",
+        "Trichy",
+        "Thanjavur"
+      ]
+    }
+  ]
+ }
