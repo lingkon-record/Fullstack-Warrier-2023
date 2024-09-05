@@ -1,0 +1,238 @@
+{
+    "MotivationalWords": {
+        "A": [
+            "Achievement",
+            "Ambition",
+            "Aspire",
+            "Attitude",
+            "Action",
+            "Adventure",
+            "Awareness"
+        ],
+        "B": [
+            "Belief",
+            "Bravery",
+            "Balance",
+            "Boldness",
+            "Blessing",
+            "Brilliance",
+            "Bloom"
+        ],
+        "C": [
+            "Courage",
+            "Confidence",
+            "Commitment",
+            "Creativity",
+            "Clarity",
+            "Compassion",
+            "Consistency"
+        ],
+        "D": [
+            "Determination",
+            "Dedication",
+            "Drive",
+            "Discipline",
+            "Dream",
+            "Diligence",
+            "Destiny"
+        ],
+        "E": [
+            "Empower",
+            "Endurance",
+            "Enthusiasm",
+            "Excellence",
+            "Energy",
+            "Encouragement",
+            "Effort"
+        ],
+        "F": [
+            "Focus",
+            "Faith",
+            "Fortitude",
+            "Freedom",
+            "Fulfillment",
+            "Fearlessness",
+            "Flourish"
+        ],
+        "G": [
+            "Gratitude",
+            "Growth",
+            "Grit",
+            "Generosity",
+            "Greatness",
+            "Goal",
+            "Grace"
+        ],
+        "H": [
+            "Hope",
+            "Happiness",
+            "Honor",
+            "Humility",
+            "Harmony",
+            "Healing",
+            "Heart"
+        ],
+        "I": [
+            "Inspiration",
+            "Integrity",
+            "Innovation",
+            "Insight",
+            "Independence",
+            "Imagination",
+            "Impact"
+        ],
+        "J": [
+            "Joy",
+            "Justice",
+            "Journey",
+            "Judgment",
+            "Jubilation",
+            "Jumpstart",
+            "Jubilant"
+        ],
+        "K": [
+            "Knowledge",
+            "Kindness",
+            "Keen",
+            "Karma",
+            "Keep",
+            "Key",
+            "Kinetic"
+        ],
+        "L": [
+            "Leadership",
+            "Love",
+            "Loyalty",
+            "Learning",
+            "Light",
+            "Legacy",
+            "Limitless"
+        ],
+        "M": [
+            "Motivation",
+            "Mindset",
+            "Momentum",
+            "Mastery",
+            "Mission",
+            "Meaning",
+            "Manifest"
+        ],
+        "N": [
+            "Nurture",
+            "Noble",
+            "New",
+            "Now",
+            "Nurturing",
+            "Noteworthy",
+            "Necessity"
+        ],
+        "O": [
+            "Optimism",
+            "Opportunity",
+            "Overcome",
+            "Outstanding",
+            "Ownership",
+            "Original",
+            "Open"
+        ],
+        "P": [
+            "Perseverance",
+            "Positivity",
+            "Passion",
+            "Purpose",
+            "Potential",
+            "Power",
+            "Progress"
+        ],
+        "Q": [
+            "Quality",
+            "Quest",
+            "Quick",
+            "Quiet",
+            "Quotable",
+            "Quantum",
+            "Quintessential"
+        ],
+        "R": [
+            "Resilience",
+            "Respect",
+            "Resolve",
+            "Responsibility",
+            "Revolution",
+            "Radiate",
+            "Rise"
+        ],
+        "S": [
+            "Success",
+            "Strength",
+            "Sincerity",
+            "Spirit",
+            "Stamina",
+            "Support",
+            "Satisfaction"
+        ],
+        "T": [
+            "Trust",
+            "Tenacity",
+            "Triumph",
+            "Transformation",
+            "Talent",
+            "Teamwork",
+            "Thrive"
+        ],
+        "U": [
+            "Understanding",
+            "Unity",
+            "Uplift",
+            "Unstoppable",
+            "Unique",
+            "Urgency",
+            "Universe"
+        ],
+        "V": [
+            "Vision",
+            "Victory",
+            "Valor",
+            "Vigor",
+            "Virtue",
+            "Vibrance",
+            "Vitality"
+        ],
+        "W": [
+            "Wisdom",
+            "Willpower",
+            "Wonder",
+            "Worth",
+            "Winning",
+            "Wealth",
+            "Wellness"
+        ],
+        "X": [
+            "X-factor",
+            "Xenial",
+            "Xenodochy",
+            "Xtraordinary",
+            "Xplore",
+            "Xemplary",
+            "Xcite"
+        ],
+        "Y": [
+            "Youth",
+            "Yearn",
+            "Yes",
+            "Yonder",
+            "Yield",
+            "Yoke",
+            "You"
+        ],
+        "Z": [
+            "Zeal",
+            "Zenith",
+            "Zest",
+            "Zing",
+            "Zestful",
+            "Zoom",
+            "Zealous"
+        ]
+    }
+}
