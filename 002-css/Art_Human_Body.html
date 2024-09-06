@@ -1,0 +1,117 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Human Body Design</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .human-body {
+            position: relative;
+        }
+
+        /* Head */
+        .head {
+            width: 100px;
+            height: 100px;
+            background-color: #f0c27b;
+            border-radius: 50%;
+            position: relative;
+        }
+
+        /* Eyes */
+        .eye {
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 35px;
+        }
+
+        .eye.left {
+            left: 25px;
+        }
+
+        .eye.right {
+            right: 25px;
+        }
+
+        /* Body */
+        .body {
+            width: 120px;
+            height: 200px;
+            background-color: #00bfff;
+            position: relative;
+            top: -20px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        /* Arms */
+        .arm {
+            width: 30px;
+            height: 120px;
+            background-color: #f0c27b;
+            position: absolute;
+            top: 40px;
+            border-radius: 20px;
+        }
+
+        .arm.left {
+            left: -40px;
+        }
+
+        .arm.right {
+            right: -40px;
+        }
+
+        /* Legs */
+        .leg {
+            width: 30px;
+            height: 120px;
+            background-color: #f0c27b;
+            position: absolute;
+            top: 200px;
+            border-radius: 20px;
+        }
+
+        .leg.left {
+            left: 20px;
+        }
+
+        .leg.right {
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="human-body">
+        <!-- Head -->
+        <div class="head">
+            <!-- Eyes -->
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+        </div>
+        
+        <!-- Body -->
+        <div class="body"></div>
+
+        <!-- Arms -->
+        <div class="arm left"></div>
+        <div class="arm right"></div>
+
+        <!-- Legs -->
+        <div class="leg left"></div>
+        <div class="leg right"></div>
+    </div>
+</body>
+</html>
