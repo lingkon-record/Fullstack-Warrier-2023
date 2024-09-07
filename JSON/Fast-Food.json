@@ -1,0 +1,84 @@
+{
+  "fast_foods": [
+    {
+      "name": "Burger",
+      "category": "Sandwich"
+    },
+    {
+      "name": "Pizza",
+      "category": "Italian"
+    },
+    {
+      "name": "Hot Dog",
+      "category": "Sandwich"
+    },
+    {
+      "name": "Fried Chicken",
+      "category": "Chicken"
+    },
+    {
+      "name": "Tacos",
+      "category": "Mexican"
+    },
+    {
+      "name": "French Fries",
+      "category": "Side"
+    },
+    {
+      "name": "Donuts",
+      "category": "Dessert"
+    },
+    {
+      "name": "Burrito",
+      "category": "Mexican"
+    },
+    {
+      "name": "Nachos",
+      "category": "Snack"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Side"
+    },
+    {
+      "name": "Sandwich",
+      "category": "Sandwich"
+    },
+    {
+      "name": "Submarine Sandwich",
+      "category": "Sandwich"
+    },
+    {
+      "name": "Soft Serve Ice Cream",
+      "category": "Dessert"
+    },
+    {
+      "name": "Milkshake",
+      "category": "Beverage"
+    },
+    {
+      "name": "Chicken Nuggets",
+      "category": "Chicken"
+    },
+    {
+      "name": "Popcorn Chicken",
+      "category": "Chicken"
+    },
+    {
+      "name": "Sushi",
+      "category": "Japanese"
+    },
+    {
+      "name": "Ramen",
+      "category": "Japanese"
+    },
+    {
+      "name": "Fish and Chips",
+      "category": "Seafood"
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "category": "Appetizer"
+    }
+  ]
+}
