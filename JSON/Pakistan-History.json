@@ -1,0 +1,61 @@
+ {
+  "history": {
+    "pre_partition": {
+      "British_Rule": {
+        "start_date": "1858",
+        "end_date": "1947",
+        "description": "The British Empire ruled the Indian subcontinent from 1858 after the Indian Rebellion of 1857. It was a time of economic exploitation and political suppression but also the introduction of modern education, infrastructure, and a legal system."
+      },
+      "Muslim_Renaissance": {
+        "key_figures": [
+          {
+            "name": "Sir Syed Ahmed Khan",
+            "contribution": "He advocated for modern education for Muslims and founded the Aligarh Muslim University in 1875. His efforts led to the formation of a Muslim intellectual and political movement."
+          }
+        ],
+        "description": "Muslims in British India, particularly under the leadership of figures like Sir Syed Ahmed Khan, began to advocate for their political and social rights. This period saw the rise of Muslim identity in colonial India."
+      },
+      "Muslim_League_Foundation": {
+        "date": "1906",
+        "description": "The All-India Muslim League was founded in 1906 to represent the interests of Muslims in British India. It later became the driving force behind the demand for a separate Muslim homeland."
+      }
+    },
+    "partition_demands": {
+      "Two_Nation_Theory": {
+        "description": "Proposed by Syed Ahmed Khan and later championed by Muhammad Ali Jinnah, the theory argued that Muslims and Hindus were two distinct nations with different religions, cultures, and social values, requiring separate states."
+      },
+      "Lahore_Resolution": {
+        "date": "March 23, 1940",
+        "description": "The Lahore Resolution, passed by the Muslim League, formally demanded 'independent states' for Muslims in the northwestern and eastern zones of British India."
+      }
+    },
+    "freedom_movement": {
+      "World_War_II": {
+        "dates": {
+          "start": "1939",
+          "end": "1945"
+        },
+        "description": "During World War II, the British Empire faced significant strain, and nationalist movements in India gained momentum. The Muslim League under Jinnah used this opportunity to push for the idea of Pakistan."
+      },
+      "Direct_Action_Day": {
+        "date": "August 16, 1946",
+        "description": "A call by the Muslim League for a day of protests and demonstrations to demand the creation of Pakistan, which resulted in communal riots and further solidified the demand for a separate Muslim state."
+      }
+    },
+    "independence_and_partition": {
+      "Mountbatten_Plan": {
+        "date": "June 3, 1947",
+        "description": "The plan presented by the last British Viceroy, Lord Mountbatten, outlined the partition of India into two independent dominions – India and Pakistan."
+      },
+      "Independence": {
+        "Pakistan_Independence_Day": {
+          "date": "August 14, 1947",
+          "description": "Pakistan was officially established as an independent nation on August 14, 1947, comprising West Pakistan (modern-day Pakistan) and East Pakistan (modern-day Bangladesh)."
+        },
+        "Migration_and_Violence": {
+          "description": "The partition resulted in the largest mass migration in history, with over 10 million people crossing the borders between India and Pakistan. The violence that accompanied the migration caused the deaths of an estimated 1-2 million people."
+        }
+      }
+    }
+  }
+}
