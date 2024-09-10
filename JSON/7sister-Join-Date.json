@@ -1,0 +1,39 @@
+{
+  "Seven_Sisters_States": [
+    {
+      "State": "Arunachal Pradesh",
+      "Date_of_Joining_India": "1987",
+      "Period_Not_Part_of_India": "Before 1947"
+    },
+    {
+      "State": "Assam",
+      "Date_of_Joining_India": "1947",
+      "Period_Not_Part_of_India": "Before 1826 (Treaty of Yandabo)"
+    },
+    {
+      "State": "Manipur",
+      "Date_of_Joining_India": "1972",
+      "Period_Not_Part_of_India": "Before 1947"
+    },
+    {
+      "State": "Meghalaya",
+      "Date_of_Joining_India": "1972",
+      "Period_Not_Part_of_India": "Before 1947"
+    },
+    {
+      "State": "Mizoram",
+      "Date_of_Joining_India": "1987",
+      "Period_Not_Part_of_India": "Before 1947"
+    },
+    {
+      "State": "Nagaland",
+      "Date_of_Joining_India": "1963",
+      "Period_Not_Part_of_India": "Before 1947"
+    },
+    {
+      "State": "Tripura",
+      "Date_of_Joining_India": "1972",
+      "Period_Not_Part_of_India": "Before 1947"
+    }
+  ]
+}
