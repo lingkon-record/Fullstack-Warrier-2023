@@ -1,0 +1,59 @@
+{
+  "Seven_Sisters_Separation": {
+    "States": [
+      "Arunachal Pradesh",
+      "Assam",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Tripura"
+    ],
+    "Separation_Events": {
+      "Pre_Colonial_Period": {
+        "Year": "before 1826",
+        "Description": "Before the British colonial period, the North-Eastern region of India was inhabited by various ethnic groups with independent kingdoms and tribal lands."
+      },
+      "Treaty_of_Yandabo": {
+        "Year": 1826,
+        "Description": "The British East India Company gained control over Assam following the Treaty of Yandabo, marking the start of colonial rule in the region."
+      },
+      "Post_Independence": {
+        "Assam_Formation": {
+          "Year": 1947,
+          "Description": "Assam became part of the Indian Union after India gained independence in 1947. It was the largest state in the North-East region, and many of the other states were originally part of Assam."
+        },
+        "Nagaland": {
+          "Year": 1963,
+          "Leader": "Indira Gandhi",
+          "Description": "Nagaland was carved out of Assam and became a separate state due to ethnic insurgency and demands for sovereignty."
+        },
+        "Meghalaya": {
+          "Year": 1972,
+          "Leader": "Indira Gandhi",
+          "Description": "Meghalaya gained statehood after demands for greater autonomy from Assam, due to cultural and linguistic differences."
+        },
+        "Manipur_Tripura_Statehood": {
+          "Year": 1972,
+          "Leader": "Indira Gandhi",
+          "Description": "Manipur and Tripura, formerly princely states, became full-fledged states of India after being union territories post-independence."
+        },
+        "Arunachal_Pradesh": {
+          "Year": 1987,
+          "Leader": "Rajiv Gandhi",
+          "Description": "Arunachal Pradesh was granted full statehood due to its strategic location bordering China and its unique ethnic composition."
+        },
+        "Mizoram": {
+          "Year": 1987,
+          "Leader": "Rajiv Gandhi",
+          "Description": "Mizoram was given statehood following a peace accord in 1986 between the Indian government and insurgent groups demanding independence."
+        }
+      }
+    },
+    "Reasons_for_Separation_and_Statehood": {
+      "Ethnic_Diversity": "The North-East is home to numerous ethnic groups with distinct languages and cultures. This diversity led to demands for greater autonomy and separate states.",
+      "Insurgency": "Several regions, especially Nagaland and Mizoram, witnessed armed insurgencies demanding independence, leading to their eventual separation and statehood.",
+      "Geopolitical_Strategic_Importance": "The North-East borders several countries, including China, Myanmar, and Bangladesh, making it strategically important for India’s security. The Indian government granted statehood to these regions partly to ensure better governance and integration."
+    }
+  }
+}
