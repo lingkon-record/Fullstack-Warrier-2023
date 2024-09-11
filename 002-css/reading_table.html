@@ -1,0 +1,128 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reading Table Design</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .reading-table {
+      width: 70%;
+      height: 40%;
+      background-color: #8B4513; /* Table wood color */
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+
+    /* Table Surface */
+    .table-surface {
+      width: 100%;
+      height: 70%;
+      background-color: #D2B48C;
+      border-radius: 10px 10px 0 0;
+      position: absolute;
+      top: 0;
+      box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Table Legs */
+    .leg {
+      width: 10%;
+      height: 30%;
+      background-color: #8B4513;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .leg.left {
+      left: 10%;
+    }
+
+    .leg.right {
+      right: 10%;
+    }
+
+    /* Book on table */
+    .book {
+      width: 20%;
+      height: 15%;
+      background-color: #FFF;
+      position: absolute;
+      top: 25%;
+      left: 40%;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .book::before {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      position: absolute;
+      top: 10%;
+      left: 0;
+    }
+
+    /* Lamp */
+    .lamp {
+      width: 8%;
+      height: 20%;
+      background-color: #444;
+      position: absolute;
+      top: -20%;
+      left: 75%;
+      border-radius: 50% 50% 0 0;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .lamp-stick {
+      width: 1%;
+      height: 20%;
+      background-color: #333;
+      position: absolute;
+      top: 20%;
+      left: 78%;
+    }
+
+    .lamp-light {
+      width: 60px;
+      height: 60px;
+      background-color: rgba(255, 255, 0, 0.4);
+      position: absolute;
+      top: -15%;
+      left: 73%;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="reading-table">
+      <div class="table-surface"></div>
+      <div class="leg left"></div>
+      <div class="leg right"></div>
+      <div class="book"></div>
+      <div class="lamp-light"></div>
+      <div class="lamp"></div>
+      <div class="lamp-stick"></div>
+    </div>
+  </div>
+</body>
+</html>
