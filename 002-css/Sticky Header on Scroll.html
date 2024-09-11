@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Header on Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Main header style */
+    .header {
+      width: 100%;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Below bar style */
+    .belowBar {
+      width: 100%;
+      height: 60px;
+      background-color: #444;
+      position: relative;
+      color: white;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    /* Main content to scroll */
+    .content {
+      padding: 20px;
+      height: 1500px; /* This height is just to simulate scrolling */
+      background-color: #f4f4f4;
+    }
+
+    /* Sticky class applied when scrolled */
+    .sticky {
+      position: fixed;
+      top: 60px; /* Will stick right below the belowBar */
+      width: 100%;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Below bar where the header sticks under -->
+  <div class="belowBar">Below Bar</div>
+
+  <!-- Header -->
+  <div class="header" id="myHeader">Sticky Header</div>
+
+  <!-- Content -->
+  <div class="content">
+    <h2>Scroll Down to See the Sticky Header</h2>
+    <p>Keep scrolling to see the header stick below the bar as you move down the page.</p>
+    <p>More content here...</p>
+  </div>
+
+  <script>
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the belowBar
+    var belowBarHeight = document.querySelector('.belowBar').offsetHeight;
+
+    // Add the sticky class to the header when you reach its scroll position
+    // Remove "sticky" when you leave the scroll position
+    window.onscroll = function() {
+      if (window.pageYOffset > belowBarHeight) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    };
+  </script>
+
+</body>
+</html>
