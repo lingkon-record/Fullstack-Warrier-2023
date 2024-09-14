@@ -1,4 +1,3 @@
-// Sample data of cricket players from different countries
 const cricketPlayers = [
   { name: 'Virat Kohli', country: 'India', runRate: 53.5 },
   { name: 'Steve Smith', country: 'Australia', runRate: 51.2 },
@@ -6,7 +5,7 @@ const cricketPlayers = [
   { name: 'Kagiso Rabada', country: 'South Africa', runRate: 48.9 },
   { name: 'Kane Williamson', country: 'New Zealand', runRate: 54.2 },
   { name: 'Babar Azam', country: 'Pakistan', runRate: 49.8 },
-  { name: 'Rohit Sharma', country: 'India', runRate: 52.7 },
+  { name: 'Rohit', country: 'India', runRate: 52.7 },
   { name: 'Pat Cummins', country: 'Australia', runRate: 49.3 },
   { name: 'Ben Stokes', country: 'England', runRate: 55.1 },
   { name: 'Quinton de Kock', country: 'South Africa', runRate: 47.5 },
@@ -17,9 +16,6 @@ const cricketPlayers = [
   { name: 'Ben Stokes', country: 'England', runRate: 54.2 },
   // Add more players to make the list at least 15+
 ];
-
-
-
 
 
 // Sort the players by run rate in descending order
@@ -33,9 +29,6 @@ console.log('5 Best Cricket Players based on Run Rate:');
 top5Players.forEach((player, index) => {
   console.log(`${index + 1}. Name: ${player.name}, Country: ${player.country}, Run Rate: ${player.runRate}`);
 });
-
-
-
 
 
 // Code2 , list ... Same variable old 
