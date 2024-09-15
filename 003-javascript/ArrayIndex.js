@@ -1,5 +1,3 @@
-// array index length
-
 const myArray = [10, 20, 30, 40, 50];
 
 // Access and log the first element
