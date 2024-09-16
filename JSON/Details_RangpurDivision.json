@@ -1,0 +1,104 @@
+{
+  "RangpurDivision": {
+    "Zilas": [
+      {
+        "name": "Rangpur",
+        "Upazilas": [
+          "Badarganj",
+          "Gangachara",
+          "Kaunia",
+          "Rangpur Sadar",
+          "Mithapukur",
+          "Pirganj",
+          "Pirgacha",
+          "Taraganj"
+        ]
+      },
+      {
+        "name": "Dinajpur",
+        "Upazilas": [
+          "Birampur",
+          "Birganj",
+          "Biral",
+          "Bochaganj",
+          "Chirirbandar",
+          "Dinajpur Sadar",
+          "Fulbari",
+          "Ghoraghat",
+          "Hakimpur",
+          "Kaharole",
+          "Khansama",
+          "Nawabganj",
+          "Parbatipur"
+        ]
+      },
+      {
+        "name": "Gaibandha",
+        "Upazilas": [
+          "Fulchhari",
+          "Gaibandha Sadar",
+          "Gobindaganj",
+          "Palashbari",
+          "Sadullapur",
+          "Sughatta",
+          "Sundarganj"
+        ]
+      },
+      {
+        "name": "Kurigram",
+        "Upazilas": [
+          "Bhurungamari",
+          "Char Rajibpur",
+          "Chilmari",
+          "Kurigram Sadar",
+          "Nageshwari",
+          "Phulbari",
+          "Rajarhat",
+          "Raomari",
+          "Ulipur"
+        ]
+      },
+      {
+        "name": "Lalmonirhat",
+        "Upazilas": [
+          "Aditmari",
+          "Hatibandha",
+          "Kaliganj",
+          "Lalmonirhat Sadar",
+          "Patgram"
+        ]
+      },
+      {
+        "name": "Nilphamari",
+        "Upazilas": [
+          "Dimla",
+          "Domar",
+          "Jaldhaka",
+          "Kishoreganj",
+          "Nilphamari Sadar",
+          "Saidpur"
+        ]
+      },
+      {
+        "name": "Panchagarh",
+        "Upazilas": [
+          "Atwari",
+          "Boda",
+          "Debiganj",
+          "Panchagarh Sadar",
+          "Tetulia"
+        ]
+      },
+      {
+        "name": "Thakurgaon",
+        "Upazilas": [
+          "Baliadangi",
+          "Haripur",
+          "Pirganj",
+          "Ranisankail",
+          "Thakurgaon Sadar"
+        ]
+      }
+    ]
+  }
+}
