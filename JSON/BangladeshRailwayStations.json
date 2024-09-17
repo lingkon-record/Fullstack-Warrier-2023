@@ -1,0 +1,189 @@
+
+{
+  "BangladeshRailwayStations": {
+    "Divisions": {
+      "Dhaka": {
+        "Districts": {
+          "Dhaka": [
+            "Kamalapur",
+            "Tejgaon",
+            "Banani",
+            "Airport",
+            "Joydebpur"
+          ],
+          "Narayanganj": [
+            "Narayanganj"
+          ],
+          "Gazipur": [
+            "Joydebpur",
+            "Tongi"
+          ],
+          "Tangail": [
+            "Tangail",
+            "Bhuapur",
+            "Elenga"
+          ],
+          "Kishoreganj": [
+            "Kishoreganj",
+            "Bhairab Bazar"
+          ]
+        }
+      },
+      "Chittagong": {
+        "Districts": {
+          "Chittagong": [
+            "Chittagong",
+            "Sitakunda",
+            "Feni"
+          ],
+          "Cox's Bazar": [
+            "Cox's Bazar",
+            "Ramu"
+          ],
+          "Comilla": [
+            "Comilla",
+            "Laksam",
+            "Brahmanbaria"
+          ],
+          "Noakhali": [
+            "Noakhali",
+            "Maijdee Court"
+          ]
+        }
+      },
+      "Rajshahi": {
+        "Districts": {
+          "Rajshahi": [
+            "Rajshahi",
+            "Abdulpur",
+            "Arani"
+          ],
+          "Pabna": [
+            "Ishwardi",
+            "Bera"
+          ],
+          "Natore": [
+            "Natore",
+            "Lalpur"
+          ],
+          "Naogaon": [
+            "Naogaon"
+          ],
+          "Bogura": [
+            "Bogura"
+          ],
+          "Joypurhat": [
+            "Joypurhat"
+          ],
+          "Chapainawabganj": [
+            "Chapainawabganj"
+          ],
+          "Sirajganj": [
+            "Sirajganj",
+            "Ullapara"
+          ]
+        }
+      },
+      "Khulna": {
+        "Districts": {
+          "Khulna": [
+            "Khulna",
+            "Doulatpur"
+          ],
+          "Jessore": [
+            "Jessore",
+            "Benapole"
+          ],
+          "Chuadanga": [
+            "Chuadanga",
+            "Alamdanga"
+          ],
+          "Kushtia": [
+            "Kushtia",
+            "Poradah",
+            "Bheramara"
+          ]
+        }
+      },
+      "Rangpur": {
+        "Districts": {
+          "Rangpur": [
+            "Rangpur",
+            "Kaunia"
+          ],
+          "Dinajpur": [
+            "Dinajpur",
+            "Parbatipur"
+          ],
+          "Lalmonirhat": [
+            "Lalmonirhat"
+          ],
+          "Thakurgaon": [
+            "Thakurgaon"
+          ],
+          "Nilphamari": [
+            "Saidpur",
+            "Nilphamari"
+          ],
+          "Panchagarh": [
+            "Panchagarh"
+          ]
+        }
+      },
+      "Sylhet": {
+        "Districts": {
+          "Sylhet": [
+            "Sylhet",
+            "Maijgaon"
+          ],
+          "Moulvibazar": [
+            "Srimangal"
+          ],
+          "Habiganj": [
+            "Shaistaganj"
+          ],
+          "Sunamganj": [
+            "Sunamganj"
+          ]
+        }
+      },
+      "Barishal": {
+        "Districts": {
+          "Barishal": [
+            "Barishal"
+          ],
+          "Bhola": [
+            "Bhola"
+          ],
+          "Patuakhali": [
+            "Patuakhali"
+          ],
+          "Jhalokathi": [
+            "Jhalokathi"
+          ],
+          "Pirojpur": [
+            "Pirojpur"
+          ]
+        }
+      },
+      "Mymensingh": {
+        "Districts": {
+          "Mymensingh": [
+            "Mymensingh",
+            "Gouripur"
+          ],
+          "Jamalpur": [
+            "Jamalpur",
+            "Bhuapur"
+          ],
+          "Netrokona": [
+            "Netrokona"
+          ],
+          "Sherpur": [
+            "Sherpur"
+          ]
+        }
+      }
+    }
+  }
+}
