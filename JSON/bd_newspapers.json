@@ -1,0 +1,49 @@
+ {
+  "newspapers": [
+    {
+      "name": "The Daily Star",
+      "foundation_year": 1991,
+      "founder_name": "Syed Mohammad Ali"
+    },
+    {
+      "name": "Prothom Alo",
+      "foundation_year": 1998,
+      "founder_name": "Matiur Rahman"
+    },
+    {
+      "name": "The Financial Express",
+      "foundation_year": 1993,
+      "founder_name": "A.H.M. Moazzem Hossain"
+    },
+    {
+      "name": "The Independent",
+      "foundation_year": 1995,
+      "founder_name": "Beximco Group"
+    },
+    {
+      "name": "Ittefaq",
+      "foundation_year": 1953,
+      "founder_name": "Tofazzal Hossain"
+    },
+    {
+      "name": "The New Age",
+      "foundation_year": 2003,
+      "founder_name": "Shahidullah Khan"
+    },
+    {
+      "name": "Kaler Kantho",
+      "foundation_year": 2010,
+      "founder_name": "Abed Khan"
+    },
+    {
+      "name": "Samakal",
+      "foundation_year": 2005,
+      "founder_name": "Golam Sarwar"
+    },
+    {
+      "name": "Jugantor",
+      "foundation_year": 2000,
+      "founder_name": "Salma Islam"
+    }
+  ]
+ }
