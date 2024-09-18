@@ -1,0 +1,73 @@
+
+{
+  "BangladeshAirports": {
+    "Dhaka": {
+      "Airports": [
+        {
+          "name": "Hazrat Shahjalal International Airport",
+          "type": "International",
+          "location": "Dhaka"
+        }
+      ]
+    },
+    "Chittagong": {
+      "Airports": [
+        {
+          "name": "Shah Amanat International Airport",
+          "type": "International",
+          "location": "Chittagong"
+        },
+        {
+          "name": "Cox's Bazar Airport",
+          "type": "Domestic",
+          "location": "Cox's Bazar"
+        }
+      ]
+    },
+    "Sylhet": {
+      "Airports": [
+        {
+          "name": "Osmani International Airport",
+          "type": "International",
+          "location": "Sylhet"
+        }
+      ]
+    },
+    "Barishal": {
+      "Airports": [
+        {
+          "name": "Barishal Airport",
+          "type": "Domestic",
+          "location": "Barishal"
+        }
+      ]
+    },
+    "Rajshahi": {
+      "Airports": [
+        {
+          "name": "Shah Makhdum Airport",
+          "type": "Domestic",
+          "location": "Rajshahi"
+        }
+      ]
+    },
+    "Rangpur": {
+      "Airports": [
+        {
+          "name": "Saidpur Airport",
+          "type": "Domestic",
+          "location": "Saidpur"
+        }
+      ]
+    },
+    "Khulna": {
+      "Airports": [
+        {
+          "name": "Jessore Airport",
+          "type": "Domestic",
+          "location": "Jessore"
+        }
+      ]
+    }
+  }
+}
