@@ -1,0 +1,54 @@
+{
+  "cadet_colleges": [
+    {
+      "name": "Faujdarhat Cadet College",
+      "location": "Chittagong",
+      "establishment_year": 1958
+    },
+    {
+      "name": "Jhenidah Cadet College",
+      "location": "Jhenidah",
+      "establishment_year": 1963
+    },
+    {
+      "name": "Rajshahi Cadet College",
+      "location": "Rajshahi",
+      "establishment_year": 1966
+    },
+    {
+      "name": "Mymensingh Girls' Cadet College",
+      "location": "Mymensingh",
+      "establishment_year": 1983
+    },
+    {
+      "name": "Sylhet Cadet College",
+      "location": "Sylhet",
+      "establishment_year": 1978
+    },
+    {
+      "name": "Barisal Cadet College",
+      "location": "Barisal",
+      "establishment_year": 1981
+    },
+    {
+      "name": "Rangpur Cadet College",
+      "location": "Rangpur",
+      "establishment_year": 1979
+    },
+    {
+      "name": "Pabna Cadet College",
+      "location": "Pabna",
+      "establishment_year": 1981
+    },
+    {
+      "name": "Comilla Cadet College",
+      "location": "Comilla",
+      "establishment_year": 1983
+    },
+    {
+      "name": "Mirzapur Cadet College",
+      "location": "Tangail",
+      "establishment_year": 1965
+    }
+  ]
+}
