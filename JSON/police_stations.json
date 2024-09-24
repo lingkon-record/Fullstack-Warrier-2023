@@ -1,0 +1,74 @@
+{
+  "police_stations": [
+    {
+      "name": "Dhanmondi Police Station",
+      "address": "Dhanmondi, Dhaka",
+      "contact": "02-9672205"
+    },
+    {
+      "name": "Tejgaon Industrial Area Police Station",
+      "address": "Tejgaon, Dhaka",
+      "contact": "02-9119465"
+    },
+    {
+      "name": "Gulshan Police Station",
+      "address": "Gulshan-1, Dhaka",
+      "contact": "02-9881125"
+    },
+    {
+      "name": "Banani Police Station",
+      "address": "Banani, Dhaka",
+      "contact": "02-8824069"
+    },
+    {
+      "name": "Mohammadpur Police Station",
+      "address": "Mohammadpur, Dhaka",
+      "contact": "02-9123500"
+    },
+    {
+      "name": "Paltan Police Station",
+      "address": "Paltan, Dhaka",
+      "contact": "02-9551186"
+    },
+    {
+      "name": "Ramna Police Station",
+      "address": "Ramna, Dhaka",
+      "contact": "02-9331482"
+    },
+    {
+      "name": "Lalbagh Police Station",
+      "address": "Lalbagh, Dhaka",
+      "contact": "02-7315544"
+    },
+    {
+      "name": "Mirpur Police Station",
+      "address": "Mirpur, Dhaka",
+      "contact": "02-9001001"
+    },
+    {
+      "name": "Uttara Police Station",
+      "address": "Uttara, Dhaka",
+      "contact": "02-8951337"
+    },
+    {
+      "name": "Shahbagh Police Station",
+      "address": "Shahbagh, Dhaka",
+      "contact": "02-9662305"
+    },
+    {
+      "name": "Badda Police Station",
+      "address": "Badda, Dhaka",
+      "contact": "02-8821188"
+    },
+    {
+      "name": "Hazaribagh Police Station",
+      "address": "Hazaribagh, Dhaka",
+      "contact": "02-9611488"
+    },
+    {
+      "name": "Khilgaon Police Station",
+      "address": "Khilgaon, Dhaka",
+      "contact": "02-7216022"
+    }
+  ]
+}
