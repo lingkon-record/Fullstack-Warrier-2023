@@ -1,0 +1,60 @@
+{
+  "MedicalScienceAndTechnology": {
+    "TechnologyPositions": [
+      {
+        "title": "Medical Technologist",
+        "description": "Operates advanced diagnostic and treatment equipment in healthcare settings.",
+        "specialization": ["Radiology", "Pathology", "Laboratory"]
+      },
+      {
+        "title": "Biomedical Engineer",
+        "description": "Designs and develops medical devices, equipment, and software.",
+        "specialization": ["Prosthetics", "Medical Imaging", "Medical Robotics"]
+      },
+      {
+        "title": "Clinical Informatics Specialist",
+        "description": "Manages and analyzes healthcare data and develops technology solutions for clinical environments.",
+        "specialization": ["Electronic Health Records", "Telemedicine", "Health Data Analytics"]
+      },
+      {
+        "title": "Telemedicine Specialist",
+        "description": "Utilizes technology to provide remote healthcare services.",
+        "specialization": ["Teleconsultation", "Remote Diagnostics", "Patient Monitoring Systems"]
+      }
+    ]
+  },
+  "DoctorPositions": {
+    "GeneralPractitioner": {
+      "title": "General Practitioner (GP)",
+      "description": "Provides primary care, diagnoses illnesses, and recommends treatments.",
+      "specialization": ["Family Medicine", "Preventive Care"]
+    },
+    "SpecialistDoctors": [
+      {
+        "title": "Cardiologist",
+        "description": "Specializes in diagnosing and treating heart-related conditions.",
+        "specialization": ["Heart Diseases", "Electrophysiology", "Heart Surgery"]
+      },
+      {
+        "title": "Neurologist",
+        "description": "Focuses on the diagnosis and treatment of neurological disorders.",
+        "specialization": ["Brain Disorders", "Spinal Cord Injuries", "Nervous System Diseases"]
+      },
+      {
+        "title": "Pediatrician",
+        "description": "Specializes in the care and treatment of infants, children, and adolescents.",
+        "specialization": ["Child Development", "Immunizations", "Pediatric Surgery"]
+      },
+      {
+        "title": "Orthopedic Surgeon",
+        "description": "Treats conditions related to bones, joints, ligaments, and muscles.",
+        "specialization": ["Sports Injuries", "Joint Replacement", "Spinal Surgery"]
+      },
+      {
+        "title": "Oncologist",
+        "description": "Specializes in diagnosing and treating cancer.",
+        "specialization": ["Radiation Therapy", "Chemotherapy", "Surgical Oncology"]
+      }
+    ]
+  }
+}
