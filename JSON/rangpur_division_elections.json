@@ -1,0 +1,172 @@
+// fix many things 
+
+{
+  "rangpur_division": {
+    "districts": [
+      {
+        "name": "Rangpur",
+        "electoral_areas": [
+          {
+            "constituency": "Rangpur-1",
+            "upazilas": ["Gangachara"]
+          },
+          {
+            "constituency": "Rangpur-2",
+            "upazilas": ["Badarganj", "Taraganj"]
+          },
+          {
+            "constituency": "Rangpur-3",
+            "upazilas": ["Rangpur Sadar"]
+          },
+          {
+            "constituency": "Rangpur-4",
+            "upazilas": ["Kaunia", "Pirgachha"]
+          },
+          {
+            "constituency": "Rangpur-5",
+            "upazilas": ["Mithapukur"]
+          }
+        ]
+      },
+      {
+        "name": "Dinajpur",
+        "electoral_areas": [
+          {
+            "constituency": "Dinajpur-1",
+            "upazilas": ["Birganj", "Kaharole"]
+          },
+          {
+            "constituency": "Dinajpur-2",
+            "upazilas": ["Birol", "Bochaganj"]
+          },
+          {
+            "constituency": "Dinajpur-3",
+            "upazilas": ["Dinajpur Sadar"]
+          },
+          {
+            "constituency": "Dinajpur-4",
+            "upazilas": ["Khansama", "Chirirbandar"]
+          },
+          {
+            "constituency": "Dinajpur-5",
+            "upazilas": ["Fulbari", "Parbatipur"]
+          },
+          {
+            "constituency": "Dinajpur-6",
+            "upazilas": ["Hakimpur", "Ghoraghat", "Nawabganj", "Birampur"]
+          }
+        ]
+      },
+      {
+        "name": "Thakurgaon",
+        "electoral_areas": [
+          {
+            "constituency": "Thakurgaon-1",
+            "upazilas": ["Thakurgaon Sadar"]
+          },
+          {
+            "constituency": "Thakurgaon-2",
+            "upazilas": ["Pirganj", "Ranisankail"]
+          },
+          {
+            "constituency": "Thakurgaon-3",
+            "upazilas": ["Haripur", "Baliadangi"]
+          }
+        ]
+      },
+      {
+        "name": "Panchagarh",
+        "electoral_areas": [
+          {
+            "constituency": "Panchagarh-1",
+            "upazilas": ["Panchagarh Sadar", "Tetulia"]
+          },
+          {
+            "constituency": "Panchagarh-2",
+            "upazilas": ["Boda", "Debiganj", "Atwari"]
+          }
+        ]
+      },
+      {
+        "name": "Nilphamari",
+        "electoral_areas": [
+          {
+            "constituency": "Nilphamari-1",
+            "upazilas": ["Dimla", "Domar"]
+          },
+          {
+            "constituency": "Nilphamari-2",
+            "upazilas": ["Jaldhaka"]
+          },
+          {
+            "constituency": "Nilphamari-3",
+            "upazilas": ["Kishoreganj"]
+          },
+          {
+            "constituency": "Nilphamari-4",
+            "upazilas": ["Nilphamari Sadar", "Saidpur"]
+          }
+        ]
+      },
+      {
+        "name": "Kurigram",
+        "electoral_areas": [
+          {
+            "constituency": "Kurigram-1",
+            "upazilas": ["Nageshwari", "Bhurungamari", "Phulbari"]
+          },
+          {
+            "constituency": "Kurigram-2",
+            "upazilas": ["Rajarhat", "Ulipur"]
+          },
+          {
+            "constituency": "Kurigram-3",
+            "upazilas": ["Chilmari", "Kurigram Sadar", "Rowmari", "Razanair"]
+          }
+        ]
+      },
+      {
+        "name": "Lalmonirhat",
+        "electoral_areas": [
+          {
+            "constituency": "Lalmonirhat-1",
+            "upazilas": ["Hatibandha", "Patgram"]
+          },
+          {
+            "constituency": "Lalmonirhat-2",
+            "upazilas": ["Kaliganj"]
+          },
+          {
+            "constituency": "Lalmonirhat-3",
+            "upazilas": ["Lalmonirhat Sadar", "Aditmari"]
+          }
+        ]
+      },
+      {
+        "name": "Gaibandha",
+        "electoral_areas": [
+          {
+            "constituency": "Gaibandha-1",
+            "upazilas": ["Sundarganj"]
+          },
+          {
+            "constituency": "Gaibandha-2",
+            "upazilas": ["Gaibandha Sadar"]
+          },
+          {
+            "constituency": "Gaibandha-3",
+            "upazilas": ["Sadullapur", "Palashbari"]
+          },
+          {
+            "constituency": "Gaibandha-4",
+            "upazilas": ["Gobindaganj"]
+          },
+          {
+            "constituency": "Gaibandha-5",
+            "upazilas": ["Shaghata", "Fulchhari"]
+          }
+        ]
+      }
+    ]
+  }
+}
