@@ -8,7 +8,7 @@ console.log(people[0].name); // Access the name property of the first object
 console.log(people[2].age);  // Access the age property of the third object
 
 
-
+// look 
 
 const student = {
   name: "Emma",
