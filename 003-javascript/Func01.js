@@ -1,8 +1,6 @@
 const temperature = 25;
 console.log(`The current temperature is ${temperature}°C.`);
 
-
-
 const person = {
   firstName: "Alice",
   lastName: "Smith",
@@ -11,8 +9,6 @@ const person = {
   }
 };
 console.log(person.fullName()); // Output: Alice Smith
-
-
 
 function greet(name = "Guest") {
   console.log(`Hello, ${name}!`);
