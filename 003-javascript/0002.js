@@ -20,7 +20,7 @@ console.log("Product:", product);
 console.log("Quotient:", quotient);
 
 
-// Next Examples
+// Next Example
 
 let price = 20;
 
