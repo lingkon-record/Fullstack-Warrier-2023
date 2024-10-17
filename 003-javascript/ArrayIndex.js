@@ -1,5 +1,6 @@
 const myArray = [10, 20, 30, 40, 50];
 
+// look in below
 // Access and log the first element
 console.log("First Element:", myArray[0]);
 
