@@ -14,7 +14,7 @@ const cricketPlayers = [
   { name: 'Rohit Sharma', country: 'India', runRate: 52.1 },
   { name: 'Pat Cummins', country: 'Australia', runRate: 50.3 },
   { name: 'Ben Stokes', country: 'England', runRate: 54.2 },
-  // Add more players to make the list at least 15+
+  // add more
 ];
 
 
