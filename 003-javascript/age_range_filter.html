@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Players by Age Range</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .player {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Find Basketball Players by Age Range</h1>
+
+    <label for="startAge">Start Age:</label>
+    <input type="number" id="startAge" placeholder="Enter start age" min="18" required>
+
+    <label for="endAge">End Age:</label>
+    <input type="number" id="endAge" placeholder="Enter end age" min="18" required>
+
+    <button onclick="findPlayers()">Submit</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    // List of basketball players with their ages
+    const players = [
+        { name: "LeBron James", age: 39 },
+        { name: "Stephen Curry", age: 36 },
+        { name: "Kevin Durant", age: 35 },
+        { name: "Luka Dončić", age: 25 },
+        { name: "Giannis Antetokounmpo", age: 29 },
+        { name: "Nikola Jokić", age: 29 },
+        { name: "Jayson Tatum", age: 26 },
+        { name: "Zion Williamson", age: 24 },
+        { name: "Ja Morant", age: 25 },
+        { name: "James Harden", age: 34 },
+        { name: "Damian Lillard", age: 34 },
+        { name: "Anthony Edwards", age: 23 }
+    ];
+
+    // Function to find players based on age range
+    function findPlayers() {
+        const startAge = parseInt(document.getElementById('startAge').value);
+        const endAge = parseInt(document.getElementById('endAge').value);
+
+        if (isNaN(startAge) || isNaN(endAge) || startAge > endAge) {
+            document.getElementById('result').innerHTML = '<p>Please enter a valid age range.</p>';
+            return;
+        }
+
+        const filteredPlayers = players.filter(player => player.age >= startAge && player.age <= endAge);
+
+        let resultHtml = '<h2>Players between ages ' + startAge + ' and ' + endAge + ':</h2>';
+        if (filteredPlayers.length > 0) {
+            filteredPlayers.forEach(player => {
+                resultHtml += `<div class="player">${player.name} (Age: ${player.age})</div>`;
+            });
+        } else {
+            resultHtml += '<p>No players found in this age range.</p>';
+        }
+
+        document.getElementById('result').innerHTML = resultHtml;
+    }
+</script>
+
+</body>
+</html>
