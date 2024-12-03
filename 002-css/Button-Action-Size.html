@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Buttons</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 15px;
+    }
+
+    .button-container button {
+      width: 120px;
+      height: 60px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-container button:nth-child(1) {
+      background: linear-gradient(45deg, #ff5722, #ff9800);
+    }
+
+    .button-container button:nth-child(2) {
+      background: linear-gradient(45deg, #4caf50, #8bc34a);
+    }
+
+    .button-container button:nth-child(3) {
+      background: linear-gradient(45deg, #2196f3, #03a9f4);
+    }
+
+    .button-container button:nth-child(4) {
+      background: linear-gradient(45deg, #9c27b0, #673ab7);
+    }
+
+    .button-container button:nth-child(5) {
+      background: linear-gradient(45deg, #e91e63, #f06292);
+    }
+
+    .button-container button.active {
+      transform: scale(1.3);
+      opacity: 1;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button-container button.shrink {
+      transform: scale(0.8);
+      opacity: 0.6;
+    }
+
+    .button-container button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="handleClick(this)">Button 1</button>
+    <button onclick="handleClick(this)">Button 2</button>
+    <button onclick="handleClick(this)">Button 3</button>
+    <button onclick="handleClick(this)">Button 4</button>
+    <button onclick="handleClick(this)">Button 5</button>
+  </div>
+
+  <script>
+    function handleClick(clickedButton) {
+      const buttons = document.querySelectorAll('.button-container button');
+
+      buttons.forEach(button => {
+        if (button === clickedButton) {
+          button.classList.add('active');
+          button.classList.remove('shrink');
+        } else {
+          button.classList.add('shrink');
+          button.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
