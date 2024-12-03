@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Interaction</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .button-container button {
+      width: 100px;
+      height: 50px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .button-container button.active {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+
+    .button-container button.shrink {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+
+    .button-container button:not(.active):hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button onclick="handleClick(this)">Button 1</button>
+    <button onclick="handleClick(this)">Button 2</button>
+    <button onclick="handleClick(this)">Button 3</button>
+    <button onclick="handleClick(this)">Button 4</button>
+    <button onclick="handleClick(this)">Button 5</button>
+  </div>
+
+  <script>
+    function handleClick(clickedButton) {
+      const buttons = document.querySelectorAll('.button-container button');
+
+      buttons.forEach(button => {
+        if (button === clickedButton) {
+          button.classList.add('active');
+          button.classList.remove('shrink');
+        } else {
+          button.classList.add('shrink');
+          button.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>
