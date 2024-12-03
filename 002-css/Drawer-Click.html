@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Button Drawer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .drawer-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 60px;
+      height: 60px;
+    }
+    .main-button {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #6200ea;
+      color: #fff;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .main-button:hover {
+      transform: scale(1.1);
+    }
+    .drawer-buttons {
+      position: absolute;
+      bottom: 70px;
+      right: 0;
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .drawer-buttons button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .drawer-buttons button:hover {
+      transform: scale(1.1);
+    }
+    .button1 {
+      background-color: #ff5252;
+      color: #fff;
+    }
+    .button2 {
+      background-color: #ffb74d;
+      color: #fff;
+    }
+    .button3 {
+      background-color: #4caf50;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+<div class="drawer-container">
+  <button class="main-button" onclick="toggleDrawer()">☰</button>
+  <div class="drawer-buttons" id="drawerButtons">
+    <button class="button1">1</button>
+    <button class="button2">2</button>
+    <button class="button3">3</button>
+  </div>
+</div>
+
+<script>
+  function toggleDrawer() {
+    const drawer = document.getElementById('drawerButtons');
+    const isVisible = drawer.style.display === 'flex';
+    drawer.style.display = isVisible ? 'none' : 'flex';
+  }
+</script>
+
+</body>
+</html>
