@@ -1,0 +1,113 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Details Board</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 20px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .board {
+      width: 400px;
+      height: 200px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+    }
+    .board h2, .board p {
+      margin: 5px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .buttons button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+      background-color: #3498db;
+      transition: all 0.2s ease-in-out;
+    }
+    .buttons button:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Person Details Board</h1>
+  <div class="board" id="board">
+    <h2>Select a person</h2>
+    <p>Click a button below to view details</p>
+  </div>
+  <div class="buttons">
+    <button onclick="showDetails('john')">John Doe</button>
+    <button onclick="showDetails('jane')">Jane Smith</button>
+    <button onclick="showDetails('alice')">Alice Brown</button>
+    <button onclick="showDetails('mike')">Mike Johnson</button>
+    <button onclick="showDetails('emma')">Emma Wilson</button>
+  </div>
+
+  <script>
+    const personDetails = {
+      john: {
+        name: "John Doe",
+        age: 29,
+        profession: "Software Engineer",
+        bio: "John is a skilled software developer with 7 years of experience in full-stack development."
+      },
+      jane: {
+        name: "Jane Smith",
+        age: 34,
+        profession: "Graphic Designer",
+        bio: "Jane is a creative designer specializing in branding and user experience."
+      },
+      alice: {
+        name: "Alice Brown",
+        age: 26,
+        profession: "Data Analyst",
+        bio: "Alice loves working with data to extract meaningful insights for businesses."
+      },
+      mike: {
+        name: "Mike Johnson",
+        age: 40,
+        profession: "Project Manager",
+        bio: "Mike has a knack for managing large teams and delivering complex projects on time."
+      },
+      emma: {
+        name: "Emma Wilson",
+        age: 30,
+        profession: "Content Writer",
+        bio: "Emma is a passionate writer who crafts engaging articles and blogs."
+      }
+    };
+
+    function showDetails(personKey) {
+      const board = document.getElementById('board');
+      const person = personDetails[personKey];
+      board.innerHTML = `
+        <h2>${person.name}</h2>
+        <p><strong>Age:</strong> ${person.age}</p>
+        <p><strong>Profession:</strong> ${person.profession}</p>
+        <p><strong>Bio:</strong> ${person.bio}</p>
+      `;
+    }
+  </script>
+</body>
+</html>
