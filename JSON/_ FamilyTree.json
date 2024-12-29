@@ -1,0 +1,103 @@
+{
+  "grandfathers": [
+    {
+      "name": "Grandfather 1",
+      "wives": [
+        {
+          "name": "Wife 1 of Grandfather 1",
+          "sons": [
+            {
+              "name": "John",
+              "sons": [
+                { "name": "Mike", "daughters": [{ "name": "Emma" }, { "name": "Sophia" }] },
+                { "name": "Jake", "daughters": [{ "name": "Olivia" }, { "name": "Ava" }] },
+                { "name": "Ryan", "daughters": [{ "name": "Isabella" }, { "name": "Charlotte" }] }
+              ]
+            },
+            {
+              "name": "David",
+              "sons": [
+                { "name": "Liam", "daughters": [{ "name": "Mia" }, { "name": "Amelia" }] },
+                { "name": "Noah", "daughters": [{ "name": "Harper" }, { "name": "Evelyn" }] },
+                { "name": "Lucas", "daughters": [{ "name": "Ella" }, { "name": "Aria" }] }
+              ]
+            },
+            {
+              "name": "Michael",
+              "sons": [
+                { "name": "James", "daughters": [{ "name": "Scarlett" }, { "name": "Victoria" }] },
+                { "name": "Henry", "daughters": [{ "name": "Luna" }, { "name": "Grace" }] },
+                { "name": "Ethan", "daughters": [{ "name": "Zoe" }, { "name": "Ellie" }] }
+              ]
+            },
+            {
+              "name": "Robert",
+              "sons": [
+                { "name": "Mason", "daughters": [{ "name": "Hannah" }, { "name": "Lily" }] },
+                { "name": "Alexander", "daughters": [{ "name": "Penelope" }, { "name": "Aurora" }] },
+                { "name": "William", "daughters": [{ "name": "Nora" }, { "name": "Ivy" }] }
+              ]
+            },
+            {
+              "name": "Daniel",
+              "sons": [
+                { "name": "Benjamin", "daughters": [{ "name": "Alice" }, { "name": "Sophie" }] },
+                { "name": "Matthew", "daughters": [{ "name": "Layla" }, { "name": "Stella" }] },
+                { "name": "Andrew", "daughters": [{ "name": "Lucy" }, { "name": "Eleanor" }] }
+              ]
+            }
+          ],
+          "daughter": { "name": "Mary" }
+        },
+        {
+          "name": "Wife 2 of Grandfather 1",
+          "sons": [
+            {
+              "name": "Thomas",
+              "sons": [
+                { "name": "Samuel", "daughters": [{ "name": "Willow" }, { "name": "Violet" }] },
+                { "name": "Christopher", "daughters": [{ "name": "Ruby" }, { "name": "Madison" }] },
+                { "name": "Logan", "daughters": [{ "name": "Bella" }, { "name": "Hazel" }] }
+              ]
+            },
+            {
+              "name": "Joseph",
+              "sons": [
+                { "name": "Isaac", "daughters": [{ "name": "Anna" }, { "name": "Sadie" }] },
+                { "name": "Gabriel", "daughters": [{ "name": "Skylar" }, { "name": "Paisley" }] },
+                { "name": "Dylan", "daughters": [{ "name": "Naomi" }, { "name": "Ariana" }] }
+              ]
+            },
+            {
+              "name": "Anthony",
+              "sons": [
+                { "name": "Nathan", "daughters": [{ "name": "Brielle" }, { "name": "Melody" }] },
+                { "name": "Caleb", "daughters": [{ "name": "Juniper" }, { "name": "Adeline" }] },
+                { "name": "Jackson", "daughters": [{ "name": "Rose" }, { "name": "Vivian" }] }
+              ]
+            },
+            {
+              "name": "Charles",
+              "sons": [
+                { "name": "Sebastian", "daughters": [{ "name": "Mackenzie" }, { "name": "Claire" }] },
+                { "name": "Elijah", "daughters": [{ "name": "Cora" }, { "name": "Molly" }] },
+                { "name": "Owen", "daughters": [{ "name": "Isla" }, { "name": "Lila" }] }
+              ]
+            },
+            {
+              "name": "Paul",
+              "sons": [
+                { "name": "Evan", "daughters": [{ "name": "Genevieve" }, { "name": "Lydia" }] },
+                { "name": "Aaron", "daughters": [{ "name": "Aurora" }, { "name": "Maeve" }] },
+                { "name": "Adam", "daughters": [{ "name": "Margot" }, { "name": "Phoebe" }] }
+              ]
+            }
+          ],
+          "daughter": { "name": "Sarah" }
+        }
+        // Add more wives and their children for Grandfather 1, and repeat for other grandfathers.
+      ]
+    }
+    // Add other grandfathers and their family structures here.
+  ]
+}
